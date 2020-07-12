@@ -1,0 +1,451 @@
+.mediaViewInfo {
+	--web-view-name: Ajuda;
+	--web-view-id: Ajuda;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Ajuda;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Ajuda {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Ajuda;
+	--web-view-id: Ajuda;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Ret_ngulo_3 {
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 390px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+}
+#Ajuda_ba {
+	position: absolute;
+	left: 159px;
+	top: 23px;
+	overflow: visible;
+	width: 44px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(25,25,25,1);
+}
+.Ret_ngulo_40 {
+	filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, 0.2));
+	position: absolute;
+	overflow: visible;
+	width: 409px;
+	height: 249.9px;
+	left: 17px;
+	top: 166px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Chatbot;
+	cursor: pointer;
+}
+.Ret_ngulo_41 {
+	filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, 0.2));
+	position: absolute;
+	overflow: visible;
+	width: 409px;
+	height: 249.9px;
+	left: 17px;
+	top: 381px;
+}
+#AJuda_Chatbot {
+	position: absolute;
+	left: 141.023px;
+	top: 243px;
+	overflow: visible;
+	width: 141px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#speech_bubble {
+	position: absolute;
+	width: 60.901px;
+	height: 54.716px;
+	left: 59px;
+	top: 231px;
+	overflow: visible;
+}
+.Caminho_98 {
+	overflow: visible;
+	position: absolute;
+	width: 2.379px;
+	height: 2.379px;
+	left: 29.261px;
+	top: 11.895px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_99 {
+	overflow: visible;
+	position: absolute;
+	width: 2.379px;
+	height: 2.379px;
+	left: 9.516px;
+	top: 30.926px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_100 {
+	overflow: visible;
+	position: absolute;
+	width: 60.901px;
+	height: 54.716px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_101 {
+	overflow: visible;
+	position: absolute;
+	width: 17.366px;
+	height: 2.379px;
+	left: 14.274px;
+	top: 30.926px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_102 {
+	overflow: visible;
+	position: absolute;
+	width: 22.124px;
+	height: 2.379px;
+	left: 9.516px;
+	top: 38.063px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_103 {
+	overflow: visible;
+	position: absolute;
+	width: 17.366px;
+	height: 2.379px;
+	left: 34.019px;
+	top: 11.895px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Reembolso_ {
+	position: absolute;
+	left: 140.023px;
+	top: 458px;
+	overflow: visible;
+	width: 110px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(25,25,25,1);
+}
+#refund {
+	position: absolute;
+	width: 56.676px;
+	height: 56.676px;
+	left: 59px;
+	top: 445px;
+	overflow: visible;
+}
+#Grupo_113 {
+	position: absolute;
+	width: 56.676px;
+	height: 56.676px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Grupo_112 {
+	position: absolute;
+	width: 56.676px;
+	height: 56.676px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_104 {
+	overflow: visible;
+	position: absolute;
+	width: 56.676px;
+	height: 56.676px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_115 {
+	position: absolute;
+	width: 33.063px;
+	height: 18.892px;
+	left: 11.807px;
+	top: 16.531px;
+	overflow: visible;
+}
+#Grupo_114 {
+	position: absolute;
+	width: 33.063px;
+	height: 18.892px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_105 {
+	overflow: visible;
+	position: absolute;
+	width: 33.063px;
+	height: 18.892px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_117 {
+	position: absolute;
+	width: 11.807px;
+	height: 11.809px;
+	left: 22.413px;
+	top: 19.999px;
+	overflow: visible;
+}
+#Grupo_116 {
+	position: absolute;
+	width: 11.807px;
+	height: 11.809px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_106 {
+	overflow: visible;
+	position: absolute;
+	width: 11.807px;
+	height: 11.809px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_119 {
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 11.807px;
+	top: 36.602px;
+	overflow: visible;
+}
+#Grupo_118 {
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_107 {
+	overflow: visible;
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_121 {
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 11.807px;
+	top: 40.144px;
+	overflow: visible;
+}
+#Grupo_120 {
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_108 {
+	overflow: visible;
+	position: absolute;
+	width: 33.063px;
+	height: 2.363px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ret_ngulo_6 {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 172px;
+	height: 113px;
+	left: -68px;
+	top: 0px;
+}
+#menu {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 19px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1_ {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31 {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Thumbnail_Circle {
+	position: absolute;
+	width: 52.55px;
+	height: 50.218px;
+	left: 285px;
+	top: 8px;
+	overflow: visible;
+}
+.rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 52.55px;
+	height: 50.218px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 52.371px;
+	height: 27.603px;
+	left: 0.088px;
+	top: 11.352px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 7.982px;
+	height: 7.982px;
+	left: 23.025px;
+	top: 4.398px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 29.203px;
+	height: 17.277px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_cd {
+	overflow: visible;
+	position: absolute;
+	width: 32.924px;
+	height: 13.364px;
+	left: 19.447px;
+	top: 3.913px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 8.025px;
+	height: 1px;
+	left: 23.096px;
+	top: 19.351px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cf {
+	overflow: visible;
+	position: absolute;
+	width: 5.364px;
+	height: 1px;
+	left: 24.308px;
+	top: 23.477px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cg {
+	overflow: visible;
+	position: absolute;
+	width: 6.602px;
+	height: 1px;
+	left: 23.937px;
+	top: 21.414px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_ch {
+	overflow: visible;
+	position: absolute;
+	width: 4.126px;
+	height: 1px;
+	left: 25.165px;
+	top: 25.54px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_ci {
+	overflow: visible;
+	position: absolute;
+	width: 2.063px;
+	height: 1px;
+	left: 25.949px;
+	top: 27.603px;
+	transform: matrix(1,0,0,1,0,0);
+}

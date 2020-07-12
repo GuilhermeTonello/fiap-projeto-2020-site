@@ -1,0 +1,388 @@
+.mediaViewInfo {
+	--web-view-name: Login- cadastro;
+	--web-view-id: Login__cadastro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Login__cadastro;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Login__cadastro {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Login- cadastro;
+	--web-view-id: Login__cadastro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Grupo_866 {
+	position: absolute;
+	width: 319px;
+	height: 427.464px;
+	left: 21px;
+	top: 97.536px;
+	overflow: visible;
+}
+#Thumbnail_Circle {
+	position: absolute;
+	width: 112.927px;
+	height: 112.927px;
+	left: 102.536px;
+	top: 0px;
+	overflow: visible;
+}
+.rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 112.927px;
+	height: 112.927px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 70.001px;
+	height: 42.624px;
+	left: 21.174px;
+	top: 35.29px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 12.325px;
+	height: 12.325px;
+	left: 29.917px;
+	top: 6.791px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 45.094px;
+	height: 26.679px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_bf {
+	overflow: visible;
+	position: absolute;
+	width: 50.841px;
+	height: 20.636px;
+	left: 19.16px;
+	top: 6.043px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 12.392px;
+	height: 1px;
+	left: 30.004px;
+	top: 29.881px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bh {
+	overflow: visible;
+	position: absolute;
+	width: 8.283px;
+	height: 1px;
+	left: 31.915px;
+	top: 36.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bi {
+	overflow: visible;
+	position: absolute;
+	width: 10.194px;
+	height: 1px;
+	left: 31.278px;
+	top: 33.067px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bj {
+	overflow: visible;
+	position: absolute;
+	width: 6.371px;
+	height: 1px;
+	left: 33.19px;
+	top: 39.438px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bk {
+	overflow: visible;
+	position: absolute;
+	width: 3.186px;
+	height: 1px;
+	left: 34.464px;
+	top: 42.624px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Logo_here {
+	position: absolute;
+	left: 115px;
+	top: 116.464px;
+	overflow: visible;
+	width: 90px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Grupo_865 {
+	position: absolute;
+	width: 319px;
+	height: 267px;
+	left: 0px;
+	top: 160.464px;
+	overflow: visible;
+}
+#Grupo_864 {
+	position: absolute;
+	width: 319px;
+	height: 218.468px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Grupo_863 {
+	position: absolute;
+	width: 319px;
+	height: 218.468px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#group_20 {
+	position: absolute;
+	width: 319px;
+	height: 40px;
+	left: 0px;
+	top: 119px;
+	overflow: visible;
+}
+#rectangle_5 {
+	position: absolute;
+	width: 319px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.rectangle_5_br {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+}
+#eg__Jaison_Just {
+	position: absolute;
+	left: 10px;
+	top: 11px;
+	overflow: visible;
+	width: 95px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(149,152,154,1);
+}
+#Name {
+	position: absolute;
+	left: 0px;
+	top: 88px;
+	overflow: visible;
+	width: 146px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(147,147,147,1);
+}
+#group_20_bu {
+	position: absolute;
+	width: 319px;
+	height: 40px;
+	left: 0px;
+	top: 31px;
+	overflow: visible;
+}
+.rectangle_5_bv {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+}
+#eg__Jaison_Just_bw {
+	position: absolute;
+	left: 10.493px;
+	top: 13px;
+	overflow: visible;
+	width: 67px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(149,152,154,1);
+}
+#Name_bx {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 144px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(147,147,147,1);
+}
+.rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 44.468px;
+	left: 0px;
+	top: 174px;
+}
+#CLICK_ME {
+	position: absolute;
+	left: 127px;
+	top: 187px;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}
+.rectangle_1_b {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 44.468px;
+	left: 0px;
+	top: 174px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Bem_vindo;
+	cursor: pointer;
+}
+#CLICK_ME_b {
+	position: absolute;
+	left: 127px;
+	top: 187px;
+	overflow: visible;
+	width: 57px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}
+#CLICK_ME_ca {
+	position: absolute;
+	left: 82px;
+	top: 247px;
+	overflow: visible;
+	width: 170px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}
+#Grupo_860 {
+	position: absolute;
+	width: 360px;
+	height: 70.902px;
+	left: 0px;
+	top: 569.098px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Produtos;
+	cursor: pointer;
+}
+.rectangle_1_ca {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 70.902px;
+	left: 0px;
+	top: 0px;
+}
+#CLICK_ME_cb {
+	position: absolute;
+	left: 151.326px;
+	top: 34.972px;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}
+#CLICK_ME_cc {
+	position: absolute;
+	left: 119.326px;
+	top: 10.972px;
+	overflow: visible;
+	width: 143px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}

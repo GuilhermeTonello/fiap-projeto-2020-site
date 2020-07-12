@@ -1,0 +1,935 @@
+.mediaViewInfo {
+	--web-view-name: Confirmando sisnistro;
+	--web-view-id: Confirmando_sisnistro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Confirmando_sisnistro;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Confirmando_sisnistro {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Confirmando sisnistro;
+	--web-view-id: Confirmando_sisnistro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Ret_ngulo_3 {
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 390px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+}
+.Ret_ngulo_6 {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 172px;
+	height: 113px;
+	left: -77px;
+	top: 0px;
+}
+#menu {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 12px;
+	top: 32px;
+	overflow: visible;
+}
+#Menu_1_ {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31 {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Vis_o_geral_ {
+	position: absolute;
+	left: 148px;
+	top: 143px;
+	overflow: visible;
+	width: 84px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(25,25,25,1);
+}
+.Ret_ngulo_35 {
+	filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, 0.2));
+	position: absolute;
+	overflow: visible;
+	width: 409px;
+	height: 249.9px;
+	left: 16px;
+	top: 194px;
+}
+#_Localiza__o_Rua_Lins_Vasconce {
+	position: absolute;
+	left: 164px;
+	top: 240px;
+	overflow: visible;
+	width: 166px;
+	height: 102px;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(3,1,4,1);
+}
+#Sinistro_auto {
+	position: absolute;
+	left: 130px;
+	top: 32px;
+	overflow: visible;
+	width: 95px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(25,25,25,1);
+}
+#ferraricrash333 {
+	position: absolute;
+	width: 111px;
+	height: 83.5px;
+	left: 37px;
+	top: 234px;
+	overflow: visible;
+}
+.Elipse_8 {
+	filter: drop-shadow(0px 0px 23px rgba(0, 0, 0, 0.09));
+	position: absolute;
+	overflow: visible;
+	width: 129px;
+	height: 128px;
+	left: 171px;
+	top: 211px;
+}
+#photo_camera {
+	position: absolute;
+	width: 39.525px;
+	height: 31.62px;
+	left: 180.867px;
+	top: 225.392px;
+	overflow: visible;
+}
+#Grupo_109 {
+	position: absolute;
+	width: 39.525px;
+	height: 31.62px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_97 {
+	overflow: visible;
+	position: absolute;
+	width: 39.525px;
+	height: 31.62px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Elipse_12 {
+	filter: drop-shadow(0px 0px 23px rgba(0, 0, 0, 0.09));
+	position: absolute;
+	overflow: visible;
+	width: 138px;
+	height: 136px;
+	left: 260px;
+	top: 211px;
+}
+#video_camera {
+	position: absolute;
+	width: 34.896px;
+	height: 30.742px;
+	left: 277.027px;
+	top: 229.448px;
+	overflow: visible;
+}
+#Grupo_123 {
+	position: absolute;
+	width: 34.896px;
+	height: 30.742px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Grupo_122 {
+	position: absolute;
+	width: 34.896px;
+	height: 30.742px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_109 {
+	overflow: visible;
+	position: absolute;
+	width: 25.379px;
+	height: 17.976px;
+	left: 0px;
+	top: 11.179px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Elipse_13 {
+	position: absolute;
+	overflow: visible;
+	width: 8.459px;
+	height: 8.46px;
+	left: 2.115px;
+	top: 2.115px;
+}
+.Elipse_14 {
+	position: absolute;
+	overflow: visible;
+	width: 10.574px;
+	height: 10.574px;
+	left: 12.689px;
+	top: 0px;
+}
+.Caminho_110 {
+	overflow: visible;
+	position: absolute;
+	width: 8.46px;
+	height: 21.149px;
+	left: 26.436px;
+	top: 9.593px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Thumbnail_Circle {
+	position: absolute;
+	width: 52.55px;
+	height: 50.218px;
+	left: 285px;
+	top: 8px;
+	overflow: visible;
+}
+.rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 52.55px;
+	height: 50.218px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 52.371px;
+	height: 27.603px;
+	left: 0.088px;
+	top: 11.352px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 7.982px;
+	height: 7.982px;
+	left: 23.025px;
+	top: 4.398px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 29.203px;
+	height: 17.277px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_b {
+	overflow: visible;
+	position: absolute;
+	width: 32.924px;
+	height: 13.364px;
+	left: 19.447px;
+	top: 3.913px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 8.025px;
+	height: 1px;
+	left: 23.096px;
+	top: 19.351px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_b {
+	overflow: visible;
+	position: absolute;
+	width: 5.364px;
+	height: 1px;
+	left: 24.308px;
+	top: 23.477px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_ca {
+	overflow: visible;
+	position: absolute;
+	width: 6.602px;
+	height: 1px;
+	left: 23.937px;
+	top: 21.414px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cb {
+	overflow: visible;
+	position: absolute;
+	width: 4.126px;
+	height: 1px;
+	left: 25.165px;
+	top: 25.54px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cc {
+	overflow: visible;
+	position: absolute;
+	width: 2.063px;
+	height: 1px;
+	left: 25.949px;
+	top: 27.603px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	height: 44.468px;
+	left: 104px;
+	top: 585px;
+}
+#CLICK_ME {
+	position: absolute;
+	left: 151px;
+	top: 597px;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}
+#Grupo_1010 {
+	position: absolute;
+	width: 428px;
+	height: 170.218px;
+	left: -68px;
+	top: 0px;
+	overflow: visible;
+}
+.Ret_ngulo_3_cb {
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 82px;
+	left: 68px;
+	top: 0px;
+}
+#Sinistro_auto_ {
+	position: absolute;
+	left: 213px;
+	top: 32px;
+	overflow: visible;
+	width: 95px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(25,25,25,1);
+}
+#Thumbnail_Circle_cd {
+	position: absolute;
+	width: 52.55px;
+	height: 50.218px;
+	left: 85px;
+	top: 120px;
+	overflow: visible;
+}
+.rectangle_16_ce {
+	position: absolute;
+	overflow: visible;
+	width: 52.55px;
+	height: 50.218px;
+	left: 0px;
+	top: 0px;
+}
+#group_54_cf {
+	position: absolute;
+	width: 52.371px;
+	height: 27.603px;
+	left: 0.088px;
+	top: 11.352px;
+	overflow: visible;
+}
+.ellipse_9_cg {
+	position: absolute;
+	overflow: visible;
+	width: 7.982px;
+	height: 7.982px;
+	left: 23.025px;
+	top: 4.398px;
+}
+.path_8_ch {
+	overflow: visible;
+	position: absolute;
+	width: 29.203px;
+	height: 17.277px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_ci {
+	overflow: visible;
+	position: absolute;
+	width: 32.924px;
+	height: 13.364px;
+	left: 19.447px;
+	top: 3.913px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cj {
+	overflow: visible;
+	position: absolute;
+	width: 8.025px;
+	height: 1px;
+	left: 23.096px;
+	top: 19.351px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_ck {
+	overflow: visible;
+	position: absolute;
+	width: 5.364px;
+	height: 1px;
+	left: 24.308px;
+	top: 23.477px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cl {
+	overflow: visible;
+	position: absolute;
+	width: 6.602px;
+	height: 1px;
+	left: 23.937px;
+	top: 21.414px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cm {
+	overflow: visible;
+	position: absolute;
+	width: 4.126px;
+	height: 1px;
+	left: 25.165px;
+	top: 25.54px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cn {
+	overflow: visible;
+	position: absolute;
+	width: 2.063px;
+	height: 1px;
+	left: 25.949px;
+	top: 27.603px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Thumbnail_Circle_co {
+	position: absolute;
+	width: 52.55px;
+	height: 50.218px;
+	left: 345.177px;
+	top: 8px;
+	overflow: visible;
+}
+.rectangle_16_cp {
+	position: absolute;
+	overflow: visible;
+	width: 52.55px;
+	height: 50.218px;
+	left: 0px;
+	top: 0px;
+}
+#group_54_cq {
+	position: absolute;
+	width: 52.371px;
+	height: 27.603px;
+	left: 0.088px;
+	top: 11.352px;
+	overflow: visible;
+}
+.ellipse_9_cr {
+	position: absolute;
+	overflow: visible;
+	width: 7.982px;
+	height: 7.982px;
+	left: 23.025px;
+	top: 4.398px;
+}
+.path_8_cs {
+	overflow: visible;
+	position: absolute;
+	width: 29.203px;
+	height: 17.277px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_ct {
+	overflow: visible;
+	position: absolute;
+	width: 32.924px;
+	height: 13.364px;
+	left: 19.447px;
+	top: 3.913px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cu {
+	overflow: visible;
+	position: absolute;
+	width: 8.025px;
+	height: 1px;
+	left: 23.096px;
+	top: 19.351px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cv {
+	overflow: visible;
+	position: absolute;
+	width: 5.364px;
+	height: 1px;
+	left: 24.308px;
+	top: 23.477px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cw {
+	overflow: visible;
+	position: absolute;
+	width: 6.602px;
+	height: 1px;
+	left: 23.937px;
+	top: 21.414px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cx {
+	overflow: visible;
+	position: absolute;
+	width: 4.126px;
+	height: 1px;
+	left: 25.165px;
+	top: 25.54px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_cy {
+	overflow: visible;
+	position: absolute;
+	width: 2.063px;
+	height: 1px;
+	left: 25.949px;
+	top: 27.603px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ret_ngulo_6_cz {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 172px;
+	height: 113px;
+	left: 0px;
+	top: 0px;
+}
+#menu_c {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 87px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1__c {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29_c {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30_c {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31_c {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_128_dc {
+	position: absolute;
+	width: 85px;
+	height: 77px;
+	left: -24px;
+	top: 0px;
+	overflow: visible;
+}
+.Ret_ngulo_6_dd {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 121px;
+	height: 113px;
+	left: 0px;
+	top: 0px;
+}
+#menu_de {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 36.532px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1__df {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29_dg {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30_dh {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31_di {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_128_dc {
+	position: absolute;
+	width: 85px;
+	height: 77px;
+	left: -24px;
+	top: 0px;
+	overflow: visible;
+}
+.Ret_ngulo_6_dd {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 121px;
+	height: 113px;
+	left: 0px;
+	top: 0px;
+}
+#menu_de {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 36.532px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1__df {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29_dg {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30_dh {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31_di {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_57 {
+	position: absolute;
+	width: 110px;
+	height: 832px;
+	left: -36px;
+	top: 0px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Sinistro__2;
+	cursor: pointer;
+}
+.Caminho_62 {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 146px;
+	height: 868px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#menu_dl {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 54px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1__dm {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29_dn {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30_do {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31_dp {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_awesome_shopping_bag {
+	overflow: visible;
+	position: absolute;
+	width: 31.5px;
+	height: 36px;
+	left: 21px;
+	top: 430px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_material_tag_faces {
+	overflow: visible;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 21px;
+	top: 91px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Sela__o;
+	cursor: pointer;
+}
+#Icon_ionic_ios_cash {
+	position: absolute;
+	width: 31.5px;
+	height: 24.736px;
+	left: 21.7px;
+	top: 247.632px;
+	overflow: visible;
+}
+.Caminho_63 {
+	overflow: visible;
+	position: absolute;
+	width: 31.5px;
+	height: 1.969px;
+	left: 0px;
+	top: 19.392px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_64 {
+	overflow: visible;
+	position: absolute;
+	width: 31.5px;
+	height: 1.969px;
+	left: 0px;
+	top: 22.767px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_65 {
+	overflow: visible;
+	position: absolute;
+	width: 31.5px;
+	height: 17.438px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_66 {
+	overflow: visible;
+	position: absolute;
+	width: 7.453px;
+	height: 7.453px;
+	left: 12.023px;
+	top: 5.126px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_feather_phone_call {
+	overflow: visible;
+	position: absolute;
+	width: 34.491px;
+	height: 34.552px;
+	left: 20.578px;
+	top: 590.304px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_awesome_trophy {
+	overflow: visible;
+	position: absolute;
+	width: 40.5px;
+	height: 36px;
+	left: 17px;
+	top: 159px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_awesome_car_alt {
+	overflow: visible;
+	position: absolute;
+	width: 33.75px;
+	height: 27px;
+	left: 20px;
+	top: 336px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_awesome_tools {
+	overflow: visible;
+	position: absolute;
+	width: 36.002px;
+	height: 36.004px;
+	left: 19px;
+	top: 511px;
+	transform: matrix(1,0,0,1,0,0);
+}

@@ -1,0 +1,460 @@
+.mediaViewInfo {
+	--web-view-name: Bem vindo;
+	--web-view-id: Bem_vindo;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Bem_vindo;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Bem_vindo {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Bem vindo;
+	--web-view-id: Bem_vindo;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#group_57 {
+	position: absolute;
+	width: 360px;
+	height: 170px;
+	left: 0px;
+	top: 67px;
+	overflow: visible;
+}
+.rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 170px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 95.02px;
+	height: 58.759px;
+	left: 132px;
+	top: 56px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 16.731px;
+	height: 16.991px;
+	left: 40.61px;
+	top: 9.362px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 61.211px;
+	height: 36.779px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_be {
+	overflow: visible;
+	position: absolute;
+	width: 69.012px;
+	height: 28.449px;
+	left: 26.008px;
+	top: 8.33px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 16.821px;
+	height: 1px;
+	left: 40.728px;
+	top: 41.193px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bg {
+	overflow: visible;
+	position: absolute;
+	width: 11.243px;
+	height: 1px;
+	left: 43.322px;
+	top: 49.976px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bh {
+	overflow: visible;
+	position: absolute;
+	width: 13.838px;
+	height: 1px;
+	left: 42.457px;
+	top: 45.584px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bi {
+	overflow: visible;
+	position: absolute;
+	width: 8.649px;
+	height: 1px;
+	left: 45.052px;
+	top: 54.368px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bj {
+	overflow: visible;
+	position: absolute;
+	width: 4.324px;
+	height: 1px;
+	left: 46.782px;
+	top: 58.759px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_61 {
+	filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 375px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Thumbnail_Circle {
+	position: absolute;
+	width: 52.55px;
+	height: 50.218px;
+	left: 296px;
+	top: 8px;
+	overflow: visible;
+}
+.rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 52.55px;
+	height: 50.218px;
+	left: 0px;
+	top: 0px;
+}
+#group_54_bn {
+	position: absolute;
+	width: 52.371px;
+	height: 27.603px;
+	left: 0.088px;
+	top: 11.352px;
+	overflow: visible;
+}
+.ellipse_9_bo {
+	position: absolute;
+	overflow: visible;
+	width: 7.982px;
+	height: 7.982px;
+	left: 23.025px;
+	top: 4.398px;
+}
+.path_8_bp {
+	overflow: visible;
+	position: absolute;
+	width: 29.203px;
+	height: 17.277px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_bq {
+	overflow: visible;
+	position: absolute;
+	width: 32.924px;
+	height: 13.364px;
+	left: 19.446px;
+	top: 3.913px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_br {
+	overflow: visible;
+	position: absolute;
+	width: 8.025px;
+	height: 1px;
+	left: 23.096px;
+	top: 19.351px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bs {
+	overflow: visible;
+	position: absolute;
+	width: 5.364px;
+	height: 1px;
+	left: 24.308px;
+	top: 23.477px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bt {
+	overflow: visible;
+	position: absolute;
+	width: 6.602px;
+	height: 1px;
+	left: 23.937px;
+	top: 21.414px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bu {
+	overflow: visible;
+	position: absolute;
+	width: 4.126px;
+	height: 1px;
+	left: 25.165px;
+	top: 25.54px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bv {
+	overflow: visible;
+	position: absolute;
+	width: 2.063px;
+	height: 1px;
+	left: 25.949px;
+	top: 27.603px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Seja_bem_vindo_jose__a_BB_segu {
+	position: absolute;
+	left: 115px;
+	top: 8px;
+	overflow: hidden;
+	width: 182px;
+	height: 59px;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Grupo_128 {
+	position: absolute;
+	width: 85px;
+	height: 77px;
+	left: -24px;
+	top: 0px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Sela__o;
+	cursor: pointer;
+}
+.Ret_ngulo_6 {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 121px;
+	height: 113px;
+	left: 0px;
+	top: 0px;
+}
+#menu {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 36.532px;
+	top: 31px;
+	overflow: visible;
+}
+#Menu_1_ {
+	position: absolute;
+	width: 30.977px;
+	height: 15.489px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Caminho_29 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_30 {
+	overflow: visible;
+	position: absolute;
+	width: 30.977px;
+	height: 1.936px;
+	left: 0px;
+	top: 6.776px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_31 {
+	overflow: visible;
+	position: absolute;
+	width: 21.297px;
+	height: 1.936px;
+	left: 9.68px;
+	top: 13.552px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_1005 {
+	position: absolute;
+	width: 322.464px;
+	height: 56.634px;
+	left: 18.5px;
+	top: 255px;
+	overflow: visible;
+}
+.Ret_ngulo_593 {
+	position: absolute;
+	overflow: visible;
+	width: 50.754px;
+	height: 9.041px;
+	left: 132.835px;
+	top: 47.593px;
+}
+.Ret_ngulo_595 {
+	position: absolute;
+	overflow: visible;
+	width: 322.464px;
+	height: 9.041px;
+	left: 0px;
+	top: 23.796px;
+}
+.Ret_ngulo_1116 {
+	position: absolute;
+	overflow: visible;
+	width: 322.464px;
+	height: 9.041px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_919 {
+	position: absolute;
+	width: 149.778px;
+	height: 147.641px;
+	left: 19px;
+	top: 383px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Sinistro;
+	cursor: pointer;
+}
+.Ret_ngulo_1078 {
+	position: absolute;
+	overflow: visible;
+	width: 149.778px;
+	height: 147.641px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_721 {
+	position: absolute;
+	width: 55.632px;
+	height: 55.632px;
+	left: 47.104px;
+	top: 18.489px;
+	overflow: visible;
+}
+.Elipse_251 {
+	position: absolute;
+	overflow: visible;
+	width: 55.632px;
+	height: 55.632px;
+	left: 0px;
+	top: 0px;
+}
+.Caminho_25 {
+	overflow: visible;
+	position: absolute;
+	width: 37.088px;
+	height: 15.834px;
+	left: 9.272px;
+	top: 19.285px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#AUTO {
+	position: absolute;
+	left: 52px;
+	top: 95px;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Grupo_919_ce {
+	position: absolute;
+	width: 149.778px;
+	height: 147.641px;
+	left: 191px;
+	top: 383px;
+	overflow: visible;
+}
+.Ret_ngulo_1078_cf {
+	position: absolute;
+	overflow: visible;
+	width: 149.778px;
+	height: 147.641px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_721_cg {
+	position: absolute;
+	width: 55.632px;
+	height: 55.632px;
+	left: 47.104px;
+	top: 18.489px;
+	overflow: visible;
+}
+.Elipse_251_ch {
+	position: absolute;
+	overflow: visible;
+	width: 55.632px;
+	height: 55.632px;
+	left: 0px;
+	top: 0px;
+}
+.Caminho_25_ci {
+	overflow: visible;
+	position: absolute;
+	width: 37.088px;
+	height: 15.834px;
+	left: 9.272px;
+	top: 19.285px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Seguro_de_vida_ {
+	position: absolute;
+	left: 16px;
+	top: 95px;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}

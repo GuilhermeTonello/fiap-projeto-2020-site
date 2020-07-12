@@ -1,0 +1,605 @@
+.mediaViewInfo {
+	--web-view-name: Detalhamento do produtos ;
+	--web-view-id: Detalhamento_do_produtos_;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Detalhamento_do_produtos_;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Detalhamento_do_produtos_ {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Detalhamento do produtos ;
+	--web-view-id: Detalhamento_do_produtos_;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Thumbnail_Small {
+	position: absolute;
+	width: 360.1px;
+	height: 167.297px;
+	left: 0px;
+	top: 57px;
+	overflow: visible;
+}
+.rectangle_15 {
+	position: absolute;
+	overflow: visible;
+	width: 360.1px;
+	height: 167.297px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 90.701px;
+	height: 55.229px;
+	left: 135px;
+	top: 101.123px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 15.97px;
+	height: 15.97px;
+	left: 38.765px;
+	top: 8.8px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 58.429px;
+	height: 34.569px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_be {
+	overflow: visible;
+	position: absolute;
+	width: 65.875px;
+	height: 26.739px;
+	left: 24.826px;
+	top: 7.83px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 16.057px;
+	height: 1px;
+	left: 38.877px;
+	top: 38.717px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bg {
+	overflow: visible;
+	position: absolute;
+	width: 10.732px;
+	height: 1px;
+	left: 41.354px;
+	top: 46.973px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bh {
+	overflow: visible;
+	position: absolute;
+	width: 13.209px;
+	height: 1px;
+	left: 40.528px;
+	top: 42.845px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bi {
+	overflow: visible;
+	position: absolute;
+	width: 8.256px;
+	height: 1px;
+	left: 43.005px;
+	top: 51.101px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bj {
+	overflow: visible;
+	position: absolute;
+	width: 4.128px;
+	height: 1px;
+	left: 44.656px;
+	top: 55.229px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Ret_ngulo_1128 {
+	opacity: 0.54;
+}
+.Ret_ngulo_1128 {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 57px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_850 {
+	position: absolute;
+	width: 319.428px;
+	height: 24px;
+	left: 20px;
+	top: 18px;
+	overflow: visible;
+}
+#Detalhes {
+	position: absolute;
+	left: 54px;
+	top: 0px;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+.icon__back {
+	overflow: visible;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	top: 1px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Produtos;
+	cursor: pointer;
+}
+#Grupo_738 {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 297.428px;
+	top: 0px;
+	overflow: visible;
+}
+.Elipse_256 {
+	position: absolute;
+	overflow: visible;
+	width: 22px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Caminho_27 {
+	overflow: visible;
+	position: absolute;
+	width: 14.667px;
+	height: 6.262px;
+	left: 3.667px;
+	top: 7.626px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_131 {
+	position: absolute;
+	width: 343px;
+	height: 98.804px;
+	left: 9px;
+	top: 208px;
+	overflow: visible;
+}
+#Grupo_37 {
+	position: absolute;
+	width: 343px;
+	height: 98.804px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Grupo_34 {
+	position: absolute;
+	width: 343px;
+	height: 98.804px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Ret_ngulo_5 {
+	filter: drop-shadow(0px 0px 12px rgba(20, 47, 255, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 379px;
+	height: 134.804px;
+	left: 0px;
+	top: 0px;
+}
+#Seguro_de_vida_Add_seguro_de_v {
+	position: absolute;
+	left: 72px;
+	top: 24px;
+	overflow: visible;
+	width: 169px;
+	height: 50px;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(3,1,4,1);
+}
+#_ {
+	position: absolute;
+	left: 260px;
+	top: 37px;
+	overflow: visible;
+	width: 11px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: SF UI Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(18,121,10,1);
+}
+#suitcase {
+	position: absolute;
+	width: 33.672px;
+	height: 33.672px;
+	left: 19px;
+	top: 27px;
+	overflow: visible;
+}
+.Caminho_59 {
+	overflow: visible;
+	position: absolute;
+	width: 33.672px;
+	height: 33.672px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Caminho_60 {
+	overflow: visible;
+	position: absolute;
+	width: 9.776px;
+	height: 9.776px;
+	left: 21.181px;
+	top: 3.802px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_761 {
+	position: absolute;
+	width: 323.428px;
+	height: 242.351px;
+	left: 18px;
+	top: 335px;
+	overflow: visible;
+}
+.Ret_ngulo_1090 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341.428px;
+	height: 260.351px;
+	left: 0px;
+	top: 0px;
+}
+.Ret_ngulo_1093 {
+	position: absolute;
+	overflow: visible;
+	width: 323.428px;
+	height: 40.351px;
+	left: 0px;
+	top: 0px;
+}
+#Seguro_de_vida {
+	position: absolute;
+	left: 9px;
+	top: 10px;
+	overflow: visible;
+	width: 107px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(112,112,112,1);
+}
+#Grupo_757 {
+	position: absolute;
+	width: 23.428px;
+	height: 21.351px;
+	left: 283px;
+	top: 10px;
+	overflow: visible;
+}
+.Ret_ngulo_1091 {
+	position: absolute;
+	overflow: visible;
+	width: 23.428px;
+	height: 21.351px;
+	left: 0px;
+	top: 0px;
+}
+.icon__dropdown {
+	overflow: visible;
+	position: absolute;
+	width: 11.632px;
+	height: 5.816px;
+	transform: translate(-299px, -354px) matrix(1,0,0,1,305,362.0001) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_758 {
+	position: absolute;
+	width: 279.52px;
+	height: 68.176px;
+	left: 9px;
+	top: 62px;
+	overflow: visible;
+}
+.Ret_ngulo_566 {
+	position: absolute;
+	overflow: visible;
+	width: 105.491px;
+	height: 10.226px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_496 {
+	position: absolute;
+	width: 279.52px;
+	height: 44.314px;
+	left: 0px;
+	top: 23.861px;
+	overflow: visible;
+}
+.Ret_ngulo_567 {
+	position: absolute;
+	overflow: visible;
+	width: 34.088px;
+	height: 10.226px;
+	left: 0px;
+	top: 0px;
+}
+.Ret_ngulo_568 {
+	position: absolute;
+	overflow: visible;
+	width: 112.49px;
+	height: 10.226px;
+	left: 44.314px;
+	top: 0px;
+}
+.Ret_ngulo_569 {
+	position: absolute;
+	overflow: visible;
+	width: 177.257px;
+	height: 10.226px;
+	left: 0px;
+	top: 17.044px;
+}
+.Ret_ngulo_570 {
+	position: absolute;
+	overflow: visible;
+	width: 40.905px;
+	height: 10.226px;
+	left: 187.483px;
+	top: 17.044px;
+}
+.Ret_ngulo_571 {
+	position: absolute;
+	overflow: visible;
+	width: 20.453px;
+	height: 10.226px;
+	left: 167.03px;
+	top: 0px;
+}
+.Ret_ngulo_572 {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 197.709px;
+	top: 0px;
+}
+.Ret_ngulo_573 {
+	position: absolute;
+	overflow: visible;
+	width: 40.905px;
+	height: 10.226px;
+	left: 238.615px;
+	top: 17.044px;
+}
+.Ret_ngulo_574 {
+	position: absolute;
+	overflow: visible;
+	width: 20.453px;
+	height: 10.226px;
+	left: 92.037px;
+	top: 34.088px;
+}
+.Ret_ngulo_575 {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 0px;
+	top: 34.088px;
+}
+.Ret_ngulo_576 {
+	position: absolute;
+	overflow: visible;
+	width: 64.767px;
+	height: 10.226px;
+	left: 214.753px;
+	top: 34.088px;
+}
+.Ret_ngulo_577 {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 122.716px;
+	top: 34.088px;
+}
+#Grupo_759 {
+	position: absolute;
+	width: 279.52px;
+	height: 68.176px;
+	left: 9px;
+	top: 149px;
+	overflow: visible;
+}
+.Ret_ngulo_566_cm {
+	position: absolute;
+	overflow: visible;
+	width: 105.491px;
+	height: 10.226px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_496_cn {
+	position: absolute;
+	width: 279.52px;
+	height: 44.314px;
+	left: 0px;
+	top: 23.861px;
+	overflow: visible;
+}
+.Ret_ngulo_567_co {
+	position: absolute;
+	overflow: visible;
+	width: 34.088px;
+	height: 10.226px;
+	left: 0px;
+	top: 0px;
+}
+.Ret_ngulo_568_cp {
+	position: absolute;
+	overflow: visible;
+	width: 112.49px;
+	height: 10.226px;
+	left: 44.314px;
+	top: 0px;
+}
+.Ret_ngulo_569_cq {
+	position: absolute;
+	overflow: visible;
+	width: 177.257px;
+	height: 10.226px;
+	left: 0px;
+	top: 17.044px;
+}
+.Ret_ngulo_570_cr {
+	position: absolute;
+	overflow: visible;
+	width: 40.905px;
+	height: 10.226px;
+	left: 187.483px;
+	top: 17.044px;
+}
+.Ret_ngulo_571_cs {
+	position: absolute;
+	overflow: visible;
+	width: 20.453px;
+	height: 10.226px;
+	left: 167.03px;
+	top: 0px;
+}
+.Ret_ngulo_572_ct {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 197.709px;
+	top: 0px;
+}
+.Ret_ngulo_573_cu {
+	position: absolute;
+	overflow: visible;
+	width: 40.905px;
+	height: 10.226px;
+	left: 238.615px;
+	top: 17.044px;
+}
+.Ret_ngulo_574_cv {
+	position: absolute;
+	overflow: visible;
+	width: 20.453px;
+	height: 10.226px;
+	left: 92.037px;
+	top: 34.088px;
+}
+.Ret_ngulo_575_cw {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 0px;
+	top: 34.088px;
+}
+.Ret_ngulo_576_cx {
+	position: absolute;
+	overflow: visible;
+	width: 64.767px;
+	height: 10.226px;
+	left: 214.753px;
+	top: 34.088px;
+}
+.Ret_ngulo_577_cy {
+	position: absolute;
+	overflow: visible;
+	width: 81.811px;
+	height: 10.226px;
+	left: 122.716px;
+	top: 34.088px;
+}
+.rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 55.468px;
+	left: 0px;
+	top: 585px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Preenchimento_de_dados;
+	cursor: pointer;
+}
+#CLICK_ME {
+	position: absolute;
+	left: 152px;
+	top: 606px;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.3px;
+}

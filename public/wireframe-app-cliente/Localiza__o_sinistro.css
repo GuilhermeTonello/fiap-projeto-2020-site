@@ -1,0 +1,346 @@
+.mediaViewInfo {
+	--web-view-name: Localização sinistro;
+	--web-view-id: Localiza__o_sinistro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Localiza__o_sinistro;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Localiza__o_sinistro {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Localização sinistro;
+	--web-view-id: Localiza__o_sinistro;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Grupo_823 {
+	position: absolute;
+	width: 59.039px;
+	height: 12.834px;
+	left: 38.478px;
+	top: 508px;
+	overflow: visible;
+}
+#Grupo_822 {
+	position: absolute;
+	width: 59.039px;
+	height: 12.834px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Elipse_270 {
+	position: absolute;
+	overflow: visible;
+	width: 12.834px;
+	height: 12.834px;
+	left: 0px;
+	top: 0px;
+}
+.Elipse_271 {
+	position: absolute;
+	overflow: visible;
+	width: 12.834px;
+	height: 12.834px;
+	left: 23.102px;
+	top: 0px;
+}
+.Caminho_46 {
+	overflow: visible;
+	position: absolute;
+	width: 12.834px;
+	height: 12.834px;
+	left: 46.204px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_970 {
+	position: absolute;
+	width: 74.52px;
+	height: 20.752px;
+	left: 250px;
+	top: 504px;
+	overflow: visible;
+}
+.rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 74.52px;
+	height: 20.752px;
+	left: 0px;
+	top: 0px;
+}
+#Confirmar {
+	position: absolute;
+	left: 13px;
+	top: 5px;
+	overflow: visible;
+	width: 41px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(249,250,252,1);
+}
+#Grupo_897 {
+	position: absolute;
+	width: 281.038px;
+	height: 59.176px;
+	left: 36.962px;
+	top: 179px;
+	overflow: visible;
+}
+.Ret_ngulo_566 {
+	position: absolute;
+	overflow: visible;
+	width: 106.064px;
+	height: 8.876px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_496 {
+	position: absolute;
+	width: 281.038px;
+	height: 38.464px;
+	left: 0px;
+	top: 20.711px;
+	overflow: visible;
+}
+.Ret_ngulo_567 {
+	position: absolute;
+	overflow: visible;
+	width: 34.273px;
+	height: 8.876px;
+	left: 0px;
+	top: 0px;
+}
+.Ret_ngulo_568 {
+	position: absolute;
+	overflow: visible;
+	width: 113.101px;
+	height: 8.876px;
+	left: 44.555px;
+	top: 0px;
+}
+.Ret_ngulo_569 {
+	position: absolute;
+	overflow: visible;
+	width: 178.219px;
+	height: 8.876px;
+	left: 0px;
+	top: 14.794px;
+}
+.Ret_ngulo_570 {
+	position: absolute;
+	overflow: visible;
+	width: 41.128px;
+	height: 8.876px;
+	left: 188.501px;
+	top: 14.794px;
+}
+.Ret_ngulo_571 {
+	position: absolute;
+	overflow: visible;
+	width: 20.564px;
+	height: 8.876px;
+	left: 167.937px;
+	top: 0px;
+}
+.Ret_ngulo_572 {
+	position: absolute;
+	overflow: visible;
+	width: 82.255px;
+	height: 8.876px;
+	left: 198.783px;
+	top: 0px;
+}
+.Ret_ngulo_573 {
+	position: absolute;
+	overflow: visible;
+	width: 41.128px;
+	height: 8.876px;
+	left: 239.911px;
+	top: 14.794px;
+}
+.Ret_ngulo_574 {
+	position: absolute;
+	overflow: visible;
+	width: 20.564px;
+	height: 8.876px;
+	left: 92.537px;
+	top: 29.588px;
+}
+.Ret_ngulo_575 {
+	position: absolute;
+	overflow: visible;
+	width: 82.255px;
+	height: 8.876px;
+	left: 0px;
+	top: 29.588px;
+}
+.Ret_ngulo_576 {
+	position: absolute;
+	overflow: visible;
+	width: 65.119px;
+	height: 8.876px;
+	left: 215.919px;
+	top: 29.588px;
+}
+.Ret_ngulo_577 {
+	position: absolute;
+	overflow: visible;
+	width: 82.255px;
+	height: 8.876px;
+	left: 123.383px;
+	top: 29.588px;
+}
+#ID127507_Lvsil_8240203c_e99e_4 {
+	position: absolute;
+	width: 291px;
+	height: 199px;
+	left: 35px;
+	top: 292px;
+	overflow: visible;
+}
+#Grupo_973 {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 293px;
+	top: 289px;
+	overflow: visible;
+}
+.Elipse_326 {
+	position: absolute;
+	overflow: visible;
+	width: 25px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+}
+#Grupo_972 {
+	transform: translate(-293px, -289px) matrix(1,0,0,1,298.8996,294.8994) rotate(45deg);
+	transform-origin: center;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Ret_ngulo_1150 {
+	position: absolute;
+	overflow: visible;
+	width: 12.021px;
+	height: 12.021px;
+	left: 3.889px;
+	top: 3.889px;
+}
+.Ret_ngulo_1151 {
+	width: 3px;
+	height: 14px;
+	position: absolute;
+	overflow: visible;
+	transform: translate(7.425px, -419.668px) matrix(1,0,0,1,304,295) rotate(90deg);
+	transform-origin: center;
+}
+#Grupo_974 {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 38.526px;
+	top: 254px;
+	overflow: visible;
+}
+.Elipse_251 {
+	position: absolute;
+	overflow: visible;
+	width: 22px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Caminho_25 {
+	overflow: visible;
+	position: absolute;
+	width: 14.667px;
+	height: 6.262px;
+	left: 3.667px;
+	top: 7.626px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Localiza__o {
+	position: absolute;
+	left: 68px;
+	top: 254px;
+	overflow: visible;
+	width: 86px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+}
+#Ret_ngulo_1128 {
+	opacity: 0.54;
+}
+.Ret_ngulo_1128 {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 57px;
+	left: 0px;
+	top: 0px;
+}
+#Localiza__o_b {
+	position: absolute;
+	left: 74px;
+	top: 18px;
+	overflow: visible;
+	width: 98px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+.icon__back {
+	overflow: visible;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 20px;
+	top: 19px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Sinistro;
+	cursor: pointer;
+}

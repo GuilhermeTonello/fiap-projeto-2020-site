@@ -1,0 +1,181 @@
+.mediaViewInfo {
+	--web-view-name: Splash;
+	--web-view-id: Splash;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Splash;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Splash {
+	position: absolute;
+	width: 360px;
+	height: 640px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Login__cadastro;
+	cursor: pointer;
+	--web-view-name: Splash;
+	--web-view-id: Splash;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Ret_ngulo_1 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 326.1px;
+	height: 385px;
+	left: 26px;
+	top: 137px;
+}
+#Grupo_1 {
+	position: absolute;
+	width: 160px;
+	height: 196px;
+	left: 100px;
+	top: 223px;
+	overflow: visible;
+}
+#Thumbnail_Circle {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 160px;
+	height: 160px;
+	left: 0px;
+	top: 0px;
+}
+#group_54 {
+	position: absolute;
+	width: 99.18px;
+	height: 60.391px;
+	left: 30px;
+	top: 50px;
+	overflow: visible;
+}
+.ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 17.463px;
+	height: 17.463px;
+	left: 42.388px;
+	top: 9.622px;
+}
+.path_8 {
+	overflow: visible;
+	position: absolute;
+	width: 63.891px;
+	height: 37.8px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.path_8_bg {
+	overflow: visible;
+	position: absolute;
+	width: 72.033px;
+	height: 29.239px;
+	left: 27.147px;
+	top: 8.561px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 17.558px;
+	height: 1px;
+	left: 42.511px;
+	top: 42.336px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bi {
+	overflow: visible;
+	position: absolute;
+	width: 11.735px;
+	height: 1px;
+	left: 45.219px;
+	top: 51.364px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bj {
+	overflow: visible;
+	position: absolute;
+	width: 14.444px;
+	height: 1px;
+	left: 44.316px;
+	top: 46.85px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bk {
+	overflow: visible;
+	position: absolute;
+	width: 9.027px;
+	height: 1px;
+	left: 47.024px;
+	top: 55.877px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.line_9_bl {
+	overflow: visible;
+	position: absolute;
+	width: 4.514px;
+	height: 1px;
+	left: 48.83px;
+	top: 60.391px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Logo_here {
+	position: absolute;
+	left: 39.95px;
+	top: 172px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#_Splach_screen_ {
+	position: absolute;
+	left: 115px;
+	top: 449px;
+	overflow: visible;
+	width: 148px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(151,151,151,1);
+	letter-spacing: 0.3px;
+}
