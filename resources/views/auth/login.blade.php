@@ -28,8 +28,9 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
 
   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"><link rel="stylesheet" type="text/css" href="{{ asset('css/pages.css') }}">
+
 </head>
-<body themebg-pattern="theme1">
+<body themebg-pattern="theme1" >
 
   <div class="theme-loader">
     <div class="loader-track">
@@ -90,16 +91,16 @@
         <form class="md-float-material form-material"  method="POST" action="{{ route('login') }}">
           {{ csrf_field() }}
           <div class="text-center">
-            <img src="png/logo.png" alt="logo.png">
+            <img src="imagens/Guardian_Logo.png" width="10%" alt="logo.png">
           </div>
           <div class="auth-box card">
             <div class="card-block">
               <div class="row m-b-20">
                 <div class="col-md-12">
-                  <h3 class="text-center txt-primary">Sign In</h3>
+                  <h3 class="text-center txt-primary">Login</h3>
                 </div>
               </div>
-              <p class="text-muted text-center p-b-5">Sign in with your regular account</p>
+              <p class="text-muted text-center p-b-5">Entre com seu login e senha</p>
               <div class="form-group form-primary">
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 <span class="form-bar"></span>
@@ -197,7 +198,7 @@
   <script type="4878d7dfa7bc22a8dfa99416-text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
   <script type="4878d7dfa7bc22a8dfa99416-text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-  <script src="{{ asset('js/waves.min.js') }}" type="4878d7dfa7bc22a8dfa99416-text/javascript') }}"></script>
+  <script src="{{ asset('js/waves.min.js') }}" type="4878d7dfa7bc22a8dfa99416-text/javascript"></script>
 
   <script type="4878d7dfa7bc22a8dfa99416-text/javascript" src="{{ asset('js/jquery.slimscroll.js') }}"></script>
 
@@ -207,5 +208,6 @@
 
 
   <script src="{{ asset('js/rocket-loader.min.js') }}" data-cf-settings="4878d7dfa7bc22a8dfa99416-|49" defer=""></script></body>
+
 
 </html>
