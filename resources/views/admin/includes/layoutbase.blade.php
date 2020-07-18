@@ -8,12 +8,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
-  <meta name="keywords" content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+  <meta name="description" content="Painel de controle - Projeto FIAP 2020 - BBSeguros" />
+  <meta name="keywords" content="Admin, control panel, panel, fiap, 2020, bbseguros, seguros, painel de controle, painel administrador, admin panel">
   <meta name="author" content="colorlib" />
-
+  <!--
   <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
-
+-->
+  <link rel="shortcut icon" type="image/png" href="imagens/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
@@ -49,7 +50,7 @@
         <div class="navbar-wrapper">
           <div class="navbar-logo">
             <a href="index.html">
-              <img class="img-fluid" src="png/logo.png" alt="Theme-Logo" />
+              <img style="height: 80px;" class="img-fluid" src="imagens/Guardian_Logo.png" alt="Theme-Logo" />
             </a>
             <a class="mobile-menu" id="mobile-collapse" href="#!">
               <i class="feather icon-menu icon-toggle-right"></i>
@@ -90,16 +91,16 @@
           <nav class="pcoded-navbar">
             <div class="nav-list">
               <div class="pcoded-inner-navbar main-menu">
-                <div class="pcoded-navigation-label">Navigation</div>
+                <div class="pcoded-navigation-label">Principal</div>
                 <ul class="pcoded-item pcoded-left-item">
                   <li class="pcoded-hasmenu active pcoded-trigger">
                     <a href="javascript:void(0)" class="waves-effect waves-dark">
                       <span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                      <span class="pcoded-mtext">Dashboard</span>
+                      <span class="pcoded-mtext">Home</span>
                     </a>
                     <ul class="pcoded-submenu">
                       <li class="active">
-                        <a href="index.html" class="waves-effect waves-dark">
+                        <a href="{{ action('HomeController@index') }}" class="waves-effect waves-dark">
                           <span class="pcoded-mtext">Default</span>
                         </a>
                       </li>
@@ -108,68 +109,68 @@
                           <span class="pcoded-mtext">CRM</span>
                         </a>
                       </li>
-                      <li class="">
-                        <a href="dashboard-analytics.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Analytics</span>
-                          <span class="pcoded-badge label label-info ">NEW</span>
-                        </a>
-                      </li>
                     </ul>
-                  </li>
-
-                  <li class="">
-                    <a href="navbar-light.html" class="waves-effect waves-dark">
-                      <span class="pcoded-micon">
-                        <i class="feather icon-menu"></i>
-                      </span>
-                      <span class="pcoded-mtext">Navigation</span>
-                    </a>
                   </li>
                   <li class="pcoded-hasmenu">
                     <a href="javascript:void(0)" class="waves-effect waves-dark">
                       <span class="pcoded-micon">
-                        <i class="feather icon-layers"></i>
+                        <i class="fa fa-gamepad"></i>
                       </span>
-                      <span class="pcoded-mtext">Widget</span>
-                      <span class="pcoded-badge label label-danger">100+</span>
+                      <span class="pcoded-mtext">Gameficação</span>
                     </a>
                     <ul class="pcoded-submenu">
                       <li class="">
                         <a href="widget-statistic.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Statistic</span>
+                          <span class="pcoded-mtext">Troféus</span>
                         </a>
                       </li>
                       <li class="">
                         <a href="widget-data.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Data</span>
+                          <span class="pcoded-mtext">Recompensas</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="pcoded-hasmenu">
+                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                      <span class="pcoded-micon">
+                        <i class="feather icon-activity"></i>
+                      </span>
+                      <span class="pcoded-mtext">Analytics</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                      <li class="">
+                        <a href="widget-statistic.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Reviews</span>
                         </a>
                       </li>
                       <li class="">
-                        <a href="widget-chart.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Chart Widget</span>
+                        <a href="widget-data.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Serviços mais utilizados</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <div class="pcoded-navigation-label">Chart And Maps</div>
+
+                <div class="pcoded-navigation-label">Gerenciamento</div>
                 <ul class="pcoded-item pcoded-left-item">
                   <li class="pcoded-hasmenu ">
                     <a href="javascript:void(0)" class="waves-effect waves-dark">
                       <span class="pcoded-micon">
-                        <i class="feather icon-pie-chart"></i>
+                          <i class="fa fa-users" aria-hidden="true"></i>
                       </span>
-                      <span class="pcoded-mtext">Charts</span>
+                      <span class="pcoded-mtext">Pessoas</span>
                     </a>
                     <ul class="pcoded-submenu">
                       <li class="">
                         <a href="chart-google.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Google Chart</span>
+                          <span class="pcoded-mtext">Nova pessoa</span>
                         </a>
                       </li>
                       <li class="">
                         <a href="chart-chartjs.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">ChartJs</span>
+                          <span class="pcoded-mtext">Lista de pessoas</span>
                         </a>
                       </li>
                     </ul>
@@ -177,14 +178,69 @@
                   <li class="pcoded-hasmenu ">
                     <a href="javascript:void(0)" class="waves-effect waves-dark">
                       <span class="pcoded-micon">
-                        <i class="feather icon-map"></i>
+                          <i class="fa fa-briefcase" aria-hidden="true"></i>
                       </span>
-                      <span class="pcoded-mtext">Maps</span>
+                      <span class="pcoded-mtext">Funcionários</span>
                     </a>
                     <ul class="pcoded-submenu">
                       <li class="">
                         <a href="map-google.html" class="waves-effect waves-dark">
-                          <span class="pcoded-mtext">Google Maps</span>
+                          <span class="pcoded-mtext">Novo funcionário</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Lista de funcionários</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="pcoded-hasmenu ">
+                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                      <span class="pcoded-micon">
+                          <i class="fa fa-building" aria-hidden="true"></i>
+                      </span>
+                      <span class="pcoded-mtext">Empresas</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Nova empresa</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Lista de empresas</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="pcoded-hasmenu ">
+                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                      <span class="pcoded-micon">
+                          <i class="fas fa-folder-open" aria-hidden="true"></i>
+                      </span>
+                      <span class="pcoded-mtext">Apólices</span>
+                    </a>
+                    <ul class="pcoded-submenu">
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Seguro de automóvel</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Seguro residencial</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Seguro empresarial</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="map-google.html" class="waves-effect waves-dark">
+                          <span class="pcoded-mtext">Seguro de vida</span>
                         </a>
                       </li>
                     </ul>
@@ -196,7 +252,17 @@
           </nav>
 
           <div class="pcoded-content">
-              @yield('conteudo')
+              <div class="pcoded-inner-content">
+                  <div class="main-body">
+                      <div class="page-wrapper">
+                          <div class="page-body">
+                            <div class="row">
+                                @yield('conteudo')
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+              </div>
           </div>
 
           <div id="styleSelector"></div>
