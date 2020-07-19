@@ -27,6 +27,11 @@ Route::post('/register', 'HomeController@index');
 */
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::prefix("cadastros")->group(function() {
+    Route::get('usuarios', 'UsuarioController@novo');
+    Route::get('funcionarios', 'FuncionarioController@novo');
+});
+
 Route::prefix("wireframe-app-cliente")->group(function (){
 
   Route::get('Aguardar_resultado', function () {
