@@ -11,12 +11,7 @@
           <ul class="pcoded-submenu">
             <li class="">
               <a href="{{ action('HomeController@index') }}" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">Default</span>
-              </a>
-            </li>
-            <li class="">
-              <a href="dashboard-crm.html" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">CRM</span>
+                <span class="pcoded-mtext">Página inicial</span>
               </a>
             </li>
           </ul>
@@ -70,17 +65,17 @@
             <span class="pcoded-micon">
                 <i class="fa fa-users" aria-hidden="true"></i>
             </span>
-            <span class="pcoded-mtext">Pessoas</span>
+            <span class="pcoded-mtext">Assegurados</span>
           </a>
           <ul class="pcoded-submenu">
             <li class="">
-              <a href="{{ action('UsuarioController@novo') }}" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">Nova pessoa</span>
+              <a href="{{ action('AsseguradoController@novo') }}" class="waves-effect waves-dark">
+                <span class="pcoded-mtext">Novo assegurado</span>
               </a>
             </li>
             <li class="">
               <a href="chart-chartjs.html" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">Lista de pessoas</span>
+                <span class="pcoded-mtext">Lista de assegurados</span>
               </a>
             </li>
           </ul>
@@ -90,17 +85,17 @@
             <span class="pcoded-micon">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
             </span>
-            <span class="pcoded-mtext">Funcionários</span>
+            <span class="pcoded-mtext">Terceiros</span>
           </a>
           <ul class="pcoded-submenu">
             <li class="">
-              <a href="{{ action('FuncionarioController@novo') }}" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">Novo funcionário</span>
+              <a href="{{ action('TerceiroController@novo') }}" class="waves-effect waves-dark">
+                <span class="pcoded-mtext">Novo terceiro</span>
               </a>
             </li>
             <li class="">
               <a href="map-google.html" class="waves-effect waves-dark">
-                <span class="pcoded-mtext">Lista de funcionários</span>
+                <span class="pcoded-mtext">Lista de terceiros</span>
               </a>
             </li>
           </ul>
