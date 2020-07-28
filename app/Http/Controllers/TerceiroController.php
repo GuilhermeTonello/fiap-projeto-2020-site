@@ -14,4 +14,9 @@ class TerceiroController extends Controller {
     public function novo() {
         return view('admin.gerenciamento.terceiros.terceiros_cadastro');
     }
+
+    public function lista() {
+        return view('admin.gerenciamento.terceiros.terceiros_lista');
+    }
+
 }

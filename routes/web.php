@@ -37,6 +37,12 @@ Route::prefix("cadastros")->group(function() {
     Route::post('empresas', 'EmpresaController@adiciona');
 });
 
+Route::prefix("lista")->group(function() {
+    Route::get('assegurados', 'AsseguradoController@lista');
+    Route::get('terceiros', 'TerceiroController@lista');
+    Route::get('empresas', 'EmpresaController@lista');
+});
+
 Route::get('/trofeus', 'TrofeusController@novo');
 Route::get('/recompensas', 'RecompensasController@novo');
 Route::get('/reviews', 'ReviewsController@novo');

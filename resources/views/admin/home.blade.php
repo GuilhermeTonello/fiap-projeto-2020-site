@@ -82,7 +82,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('AsseguradoController@lista') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -104,7 +104,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('TerceiroController@lista') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -126,7 +126,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('EmpresaController@lista') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">

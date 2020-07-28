@@ -67,7 +67,7 @@
                     <label for="cpf" class="block">CPF*</label>
                   </div>
                   <div class="col-sm-12">
-                    <input id="cpf"  name="cpf" type="text" data-mask="999.999.999-99" class="form-control">
+                    <input id="cpf"  name="cpf" type="text" data-mask="999.999.999-99" class="form-control cpf">
                   </div>
                 </div>
               </fieldset>

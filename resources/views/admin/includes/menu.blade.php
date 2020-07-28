@@ -74,7 +74,7 @@
               </a>
             </li>
             <li class="">
-              <a href="chart-chartjs.html" class="waves-effect waves-dark">
+              <a href="{{ action('AsseguradoController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de assegurados</span>
               </a>
             </li>
@@ -94,7 +94,7 @@
               </a>
             </li>
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('TerceiroController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de terceiros</span>
               </a>
             </li>
@@ -114,7 +114,7 @@
               </a>
             </li>
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('EmpresaController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de empresas</span>
               </a>
             </li>

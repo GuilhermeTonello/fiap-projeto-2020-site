@@ -16,6 +16,10 @@ class AsseguradoController extends Controller {
         return view('admin.gerenciamento.assegurados.assegurado_cadastro');
     }
 
+    public function lista() {
+        return view('admin.gerenciamento.assegurados.assegurados_lista');
+    }
+
     public function adiciona(/*AsseguradoRequest $request*/) {
 
         /*

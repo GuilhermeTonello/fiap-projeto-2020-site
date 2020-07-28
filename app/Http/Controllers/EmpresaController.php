@@ -16,6 +16,10 @@ class EmpresaController extends Controller {
         return view('admin.gerenciamento.empresas.empresa_cadastro');
     }
 
+    public function lista() {
+        return view('admin.gerenciamento.empresas.empresas_lista');
+    }
+
 public function adiciona(/*EmpresaRequest $request*/) {
 
     /*
