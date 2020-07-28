@@ -32,7 +32,15 @@ Route::prefix("cadastros")->group(function() {
     Route::post('assegurados', 'AsseguradoController@adiciona');
 
     Route::get('terceiros', 'TerceiroController@novo');
+
+    Route::get('empresas', 'EmpresaController@novo');
+    Route::post('empresas', 'EmpresaController@adiciona');
 });
+
+Route::get('/trofeus', 'TrofeusController@novo');
+Route::get('/recompensas', 'RecompensasController@novo');
+Route::get('/reviews', 'ReviewsController@novo');
+Route::get('/servicosmaisutilizados', 'ServicosMaisUtilizadosController@novo');
 
 Route::prefix("wireframe-app-cliente")->group(function (){
 

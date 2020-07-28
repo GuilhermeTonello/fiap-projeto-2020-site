@@ -24,7 +24,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('TrofeusController@novo') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -35,7 +35,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('RecompensasController@novo') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -46,7 +46,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ReviewsController@novo') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -57,7 +57,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ServicosMaisUtilizadosController@novo') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -115,7 +115,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('EmpresaController@novo') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
