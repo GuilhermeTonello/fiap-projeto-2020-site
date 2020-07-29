@@ -26,6 +26,6 @@ Projeto feito pelos alunos do 2º de engenharia de computação do período da m
 
 ### Veja também
 
-[App para o assegurado](https://github.com/GuilhermeTonello/fiap-projeto-2020-app-cliente)
-[App para o terceirizado](https://github.com/GuilhermeTonello/fiap-projeto-2020-app-prestador)
-[Wireframe e telas dos aplicativos](https://github.com/GuilhermeTonello/fiap-next2020-ux-ui)
+ - [App para o assegurado](https://github.com/GuilhermeTonello/fiap-projeto-2020-app-cliente)
+ - [App para o terceirizado](https://github.com/GuilhermeTonello/fiap-projeto-2020-app-prestador)
+ - [Wireframe e telas dos aplicativos](https://github.com/GuilhermeTonello/fiap-next2020-ux-ui)
