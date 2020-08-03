@@ -17,7 +17,7 @@ class CreateAsseguradosTable extends Migration
             $table->id();
             $table->char('primeiro_nome', 255);
             $table->char('ultimo_nome', 255);
-            $table->char('email', 255);
+            $table->char('email', 255)->unique();
             $table->json('conquistas');
             $table->char('telefone', 50);
             $table->json('endereco');

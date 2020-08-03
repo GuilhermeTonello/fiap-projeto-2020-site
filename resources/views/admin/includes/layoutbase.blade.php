@@ -48,7 +48,7 @@
       <nav class="navbar header-navbar pcoded-header">
         <div class="navbar-wrapper">
           <div class="navbar-logo">
-            <a href="index.html">
+            <a href="{{ action('HomeController@index') }}">
               <img style="height: 80px;" class="img-fluid" src="{{ secure_asset('/imagens/Guardian_Logo.png') }}" alt="Theme-Logo" />
             </a>
             <a class="mobile-menu" id="mobile-collapse" href="#!">

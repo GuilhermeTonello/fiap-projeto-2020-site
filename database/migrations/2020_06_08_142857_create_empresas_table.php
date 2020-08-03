@@ -15,10 +15,10 @@ class CreateEmpresasTable extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
-            $table->char('razao_social', 255);
-            $table->char('nome_fantasia', 255);
-            $table->char('cnpj', 30);
-            $table->char('email', 255);
+            $table->char('razao_social', 255)->unique();
+            $table->char('nome_fantasia', 255)->unique();
+            $table->char('cnpj', 30)->unique();
+            $table->char('email', 255)->unique();
             $table->char('telefone', 50);
             $table->json('endereco');
             $table->timestamps();

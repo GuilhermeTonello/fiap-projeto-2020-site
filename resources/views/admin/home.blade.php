@@ -140,7 +140,7 @@
 <h2>Apólices</h2>
 <div class="row">
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ApoliceController@index_automovel') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -151,7 +151,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ApoliceController@index_residencial') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -162,7 +162,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ApoliceController@index_empresarial') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -173,7 +173,7 @@
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="{{ action('HomeController@index') }}">
+        <a href="{{ action('ApoliceController@index_vida') }}">
             <div class="card" style="width: 18rem;">
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">

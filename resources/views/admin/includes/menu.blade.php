@@ -3,7 +3,7 @@
     <div class="pcoded-inner-navbar main-menu">
       <div class="pcoded-navigation-label">Principal</div>
       <ul class="pcoded-item pcoded-left-item">
-        <li class="pcoded-hasmenu active pcoded-trigger">
+        <li class="pcoded-hasmenu "><!-- active pcoded-trigger -->
           <a href="javascript:void(0)" class="waves-effect waves-dark">
             <span class="pcoded-micon"><i class="feather icon-home"></i></span>
             <span class="pcoded-mtext">Home</span>
@@ -80,7 +80,7 @@
             </li>
           </ul>
         </li>
-        <li class="pcoded-hasmenu ">
+        <li class="pcoded-hasmenu <?php echo ((Config::get('vars.controller') == "TerceiroController")?"active pcoded-trigger":""); ?>">
           <a href="javascript:void(0)" class="waves-effect waves-dark">
             <span class="pcoded-micon">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -129,22 +129,22 @@
           </a>
           <ul class="pcoded-submenu">
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('ApoliceController@index_automovel') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Seguro de automóvel</span>
               </a>
             </li>
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('ApoliceController@index_residencial') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Seguro residencial</span>
               </a>
             </li>
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('ApoliceController@index_empresarial') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Seguro empresarial</span>
               </a>
             </li>
             <li class="">
-              <a href="map-google.html" class="waves-effect waves-dark">
+              <a href="{{ action('ApoliceController@index_vida') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Seguro de vida</span>
               </a>
             </li>

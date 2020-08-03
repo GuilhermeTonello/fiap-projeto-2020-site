@@ -32,6 +32,7 @@ Route::prefix("cadastros")->group(function() {
     Route::post('assegurados', 'AsseguradoController@adiciona');
 
     Route::get('terceiros', 'TerceiroController@novo');
+    Route::post('terceiros', 'TerceiroController@adiciona');
 
     Route::get('empresas', 'EmpresaController@novo');
     Route::post('empresas', 'EmpresaController@adiciona');
@@ -41,6 +42,13 @@ Route::prefix("lista")->group(function() {
     Route::get('assegurados', 'AsseguradoController@lista');
     Route::get('terceiros', 'TerceiroController@lista');
     Route::get('empresas', 'EmpresaController@lista');
+});
+
+Route::prefix("apolices")->group(function() {
+    Route::get('automovel', 'ApoliceController@index_automovel');
+    Route::get('residencial', 'ApoliceController@index_residencial');
+    Route::get('empresarial', 'ApoliceController@index_empresarial');
+    Route::get('vida', 'ApoliceController@index_vida');
 });
 
 Route::get('/trofeus', 'TrofeusController@novo');

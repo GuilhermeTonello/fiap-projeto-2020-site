@@ -1,3 +1,9 @@
+<?php
+$controller = 'TerceiroController';
+global $view;
+$view = 'novo';
+Config::set('vars.controller', $controller);
+?>
 @extends('admin.includes.layoutbase')
 
 @section('stylesheet_sec')
@@ -52,7 +58,7 @@
                       <option value="Masculino">Masculino</option>
                       <option value="Feminino">Feminino</option>
                       <option value="Outro">Outro</option>
-                      <option value="NãoInformado">Prefiro não dizer</option>
+                      <option value="Prefiro não dizer">Prefiro não dizer</option>
                   </select>
               </div>
           </div>
