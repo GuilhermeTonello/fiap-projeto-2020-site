@@ -19,6 +19,15 @@ class EmpresaRequest extends FormRequest {
     public function rules() {
         return [
             'nome_fantasia' => 'required',
+            'razao_social' => 'required',
+            'email' => 'required',
+            'telefone' => 'required',
+            'autorizante' => 'required',
+            'cep' => 'required',
+            'logradouro' => 'required',
+            'complemento' => 'required',
+            'uf' => 'required',
+            'cidade' => 'required',
         ];
     }
 }
