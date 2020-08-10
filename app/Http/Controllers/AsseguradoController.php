@@ -22,10 +22,10 @@ class AsseguradoController extends Controller {
 
     public function adiciona(/*AsseguradoRequest $request*/) {
 
-        /*
-        DB::insert('INSERT INTO assegurados values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+
+        DB::insert('INSERT INTO assegurados(primeiro_nome, sobrenome, sexo, nome_social, genero, email, senha, data_nascimento, rg, cpf, telefone) VALUES()',
     Request::except('confirmar_senha'));
-        */
+
 
         $sucesso = 'Assegurado(a) ' . Request::input('primeiro_nome') . ' registrado(a) com sucesso.';
         return redirect()->action('AsseguradoController@novo')->with('sucesso', $sucesso);

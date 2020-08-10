@@ -1,3 +1,9 @@
+<?php
+$controller = 'EmpresaController';
+$view = 'lista';
+Config::set('vars.controller', $controller);
+Config::set('vars.view', $view);
+?>
 @extends('admin.includes.layoutbase')
 
 @section('stylesheet_sec')

@@ -15,4 +15,9 @@ class TrofeusController extends Controller {
         return view('admin.principal.gameficacao.trofeus');
     }
 
+    public function adiciona(/*TrofeusRequest $request*/) {
+        $sucesso = 'Troféu ' . Request::input('nome') . ' registrado com sucesso.';
+        return redirect()->action('TrofeusController@novo')->with('sucesso', $sucesso);
+    }
+
 }

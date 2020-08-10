@@ -60,7 +60,7 @@
 
       <div class="pcoded-navigation-label">Gerenciamento</div>
       <ul class="pcoded-item pcoded-left-item">
-        <li class="pcoded-hasmenu ">
+        <li class="pcoded-hasmenu <?php echo ((Config::get('vars.controller') == "AsseguradoController")?"active pcoded-trigger":""); ?>">
           <a href="javascript:void(0)" class="waves-effect waves-dark">
             <span class="pcoded-micon">
                 <i class="fa fa-users" aria-hidden="true"></i>
@@ -68,12 +68,12 @@
             <span class="pcoded-mtext">Assegurados</span>
           </a>
           <ul class="pcoded-submenu">
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "AsseguradoController"){echo ((Config::get('vars.view') == "novo")?"active":"");} ?>">
               <a href="{{ action('AsseguradoController@novo') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Novo assegurado</span>
               </a>
             </li>
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "AsseguradoController"){echo ((Config::get('vars.view') == "lista")?"active":"");} ?>">
               <a href="{{ action('AsseguradoController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de assegurados</span>
               </a>
@@ -88,19 +88,19 @@
             <span class="pcoded-mtext">Terceiros</span>
           </a>
           <ul class="pcoded-submenu">
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "TerceiroController"){echo ((Config::get('vars.view') == "novo")?"active":"");} ?>">
               <a href="{{ action('TerceiroController@novo') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Novo terceiro</span>
               </a>
             </li>
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "TerceiroController"){echo ((Config::get('vars.view') == "lista")?"active":"");} ?>">
               <a href="{{ action('TerceiroController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de terceiros</span>
               </a>
             </li>
           </ul>
         </li>
-        <li class="pcoded-hasmenu ">
+        <li class="pcoded-hasmenu <?php echo ((Config::get('vars.controller') == "EmpresaController")?"active pcoded-trigger":""); ?>">
           <a href="javascript:void(0)" class="waves-effect waves-dark">
             <span class="pcoded-micon">
                 <i class="fa fa-building" aria-hidden="true"></i>
@@ -108,12 +108,12 @@
             <span class="pcoded-mtext">Empresas</span>
           </a>
           <ul class="pcoded-submenu">
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "EmpresaController"){echo ((Config::get('vars.view') == "novo")?"active":"");} ?>">
               <a href="{{ action('EmpresaController@novo') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Nova empresa</span>
               </a>
             </li>
-            <li class="">
+            <li class="<?php if(Config::get('vars.controller') == "EmpresaController"){echo ((Config::get('vars.view') == "lista")?"active":"");} ?>">
               <a href="{{ action('EmpresaController@lista') }}" class="waves-effect waves-dark">
                 <span class="pcoded-mtext">Lista de empresas</span>
               </a>

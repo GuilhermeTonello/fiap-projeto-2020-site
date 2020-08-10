@@ -52,7 +52,11 @@ Route::prefix("apolices")->group(function() {
 });
 
 Route::get('/trofeus', 'TrofeusController@novo');
+Route::post('/trofeus', 'TrofeusController@adiciona');
+
 Route::get('/recompensas', 'RecompensasController@novo');
+Route::post('/recompensas', 'RecompensasController@adiciona');
+
 Route::get('/reviews', 'ReviewsController@novo');
 Route::get('/servicosmaisutilizados', 'ServicosMaisUtilizadosController@novo');
 

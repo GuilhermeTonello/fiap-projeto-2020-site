@@ -1,8 +1,8 @@
 <?php
-$controller = 'TerceiroController';
-global $view;
+$controller = 'AsseguradoController';
 $view = 'novo';
 Config::set('vars.controller', $controller);
+Config::set('vars.view', $view);
 ?>
 @extends('admin.includes.layoutbase')
 

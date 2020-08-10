@@ -15,4 +15,9 @@ class RecompensasController extends Controller {
         return view('admin.principal.gameficacao.recompensas');
     }
 
+    public function adiciona(/*RecompensasRequest $request*/) {
+        $sucesso = 'Recompensa ' . Request::input('nome') . ' registrada com sucesso.';
+        return redirect()->action('RecompensasController@novo')->with('sucesso', $sucesso);
+    }
+
 }
