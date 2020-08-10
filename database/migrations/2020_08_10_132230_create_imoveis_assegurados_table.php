@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVidasAsseguradosTable extends Migration
+class CreateImoveisAsseguradosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,15 @@ class CreateVidasAsseguradosTable extends Migration
      */
     public function up()
     {
-        Schema::create('vidas_assegurados', function (Blueprint $table) {
+        Schema::create('imoveis_assegurados', function (Blueprint $table) {
             $table->id();
             $table->boolean('e_empresa');
-            $table->foreignId('fk_assegurado');
+            $table->foreignId('fk_assegurado')->nullable();
             $table->foreign('fk_assegurado')->references('id')->on('assegurados');
-            $table->foreignId('fk_empresa');
+            $table->foreignId('fk_empresa')->nullable();
             $table->foreign('fk_empresa')->references('id')->on('empresas');
-            $table->char('nome_vida', 255);
-            $table->date('data_nascimento');
-            $table->text('observacoes');
-            $table->json('problemas_saude');
-            $table->decimal('valor_apolice', 255, 2);
+            $table->json('endereco_imovel');
+            $table->decimal('valor_imovel', 32, 2);
             $table->timestamps();
         });
     }
@@ -36,6 +33,6 @@ class CreateVidasAsseguradosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vidas_assegurados');
+        Schema::dropIfExists('imoveis_assegurados');
     }
 }

@@ -18,7 +18,7 @@ class CreateAutomoveisAsseguradosTable extends Migration
             $table->char('placa', 10);
             $table->char('renavam', 255);
             $table->text('relatorio_avaliacao');
-            $table->decimal('valor_avaliacao', 255, 2);
+            $table->decimal('valor_avaliacao', 32, 2);
             $table->foreignId('fk_modelo');
             $table->foreign('fk_modelo')->references('id')->on('modelos_auto_assegurados');
             $table->char('caminho_foto', 255);

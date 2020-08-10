@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateApolices extends Migration
+class CreateApolicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -24,11 +24,10 @@ class CreateApolices extends Migration
             $table->foreign('fk_empresa')->references('id')->on('empresas');
             $table->json('bens_assegurados');
             $table->char('descricao', 255);
-            $table->int('parcelas', 8);
+            $table->integer('parcelas');
             $table->decimal('valor_pp', 8,2);
             $table->timestamps();
         });
-
     }
 
     /**

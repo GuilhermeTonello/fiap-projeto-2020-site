@@ -11,8 +11,8 @@ Config::set('vars.view', $view);
 @stop
 
 @section('titulo')
-    <h5>Cadastro de empresa</h5>
-    <span>Página para cadastro de uma nova empresa</span>
+<h5>Editando empresa TESTE</h5>
+<span>Página para edição de uma empresa</span>
 @stop
 
 @section('conteudo')
@@ -165,7 +165,7 @@ Config::set('vars.view', $view);
           <h4 class="sub-title">Finalizar cadastro</h4>
           <div class="form-group row">
             <div class="col-sm-4">
-              <button type="submit" class="btn btn-primary">Finalizar cadastro</button>
+              <button type="submit" class="btn btn-primary">Finalizar edição</button>
             </div>
           </div>
         </form>

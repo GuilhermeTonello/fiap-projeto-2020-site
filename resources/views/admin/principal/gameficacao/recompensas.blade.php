@@ -40,7 +40,7 @@
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="royalts">Recompensa (Royalts)</label>
                 <div class="col-sm-10">
-                    <input value="{{ old('royalts') }}" placeholder="Nome do troféu" type="text" class="form-control" id="royalts" name="royalts">
+                    <input value="{{ old('royalts') }}" placeholder="Recompensa" type="text" class="form-control" id="royalts" name="royalts">
                 </div>
               </div>
               <div class="form-group row">

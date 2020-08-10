@@ -17,6 +17,19 @@ Config::set('vars.view', $view);
 @stop
 
 @section('conteudo')
+
+@if(!empty($sucesso))
+    <div class="alert alert-success">
+        {{ $sucesso }}
+    </div>
+@endif
+
+@if(!empty($erro))
+    <div class="alert alert-danger">
+        {{ $erro }}
+    </div>
+@endif
+
 <div class="form-group">
     <label for="procurar">Procurar registros:</label>
     <input aria-describedby="procurar-help" class="form-control" type="text" id="procurar" placeholder="Procurar registros..." />
@@ -41,20 +54,9 @@ Config::set('vars.view', $view);
         <td>123456789</td>
         <td>e1@email.com</td>
         <td>
-            <a href="/ver/1" class="btn btn-primary">VER</a>
-            <a href="/editar/1" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/1" class="btn btn-danger">EXCLUIR</a>
-        </td>
-    </tr>
-    <tr>
-        <td>Empresa 2</td>
-        <td>Existir para testes também</td>
-        <td>48758927584</td>
-        <td>e2@email.com</td>
-        <td>
-            <a href="/ver/2" class="btn btn-primary">VER</a>
-            <a href="/editar/2" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/2" class="btn btn-danger">EXCLUIR</a>
+            <a href="{{ action('EmpresaController@ver', 1) }}" class="btn btn-primary">VER</a>
+            <a href="{{ action('EmpresaController@editar', 1) }}" class="btn btn-success">EDITAR</a>
+            <a onclick="return confirm('Deseja mesmo excluir a empresa TESTE?');" href="{{ action('EmpresaController@deletar', 1) }}" class="btn btn-danger">EXCLUIR</a>
         </td>
     </tr>
   </tbody>

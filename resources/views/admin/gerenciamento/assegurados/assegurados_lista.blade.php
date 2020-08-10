@@ -17,6 +17,19 @@ Config::set('vars.view', $view);
 @stop
 
 @section('conteudo')
+
+@if(!empty($sucesso))
+    <div class="alert alert-success">
+        {{ $sucesso }}
+    </div>
+@endif
+
+@if(!empty($erro))
+    <div class="alert alert-danger">
+        {{ $erro }}
+    </div>
+@endif
+
 <div class="form-group">
     <label for="procurar">Procurar registros:</label>
     <input aria-describedby="procurar-help" class="form-control" type="text" id="procurar" placeholder="Procurar registros..." />
@@ -36,30 +49,20 @@ Config::set('vars.view', $view);
     </tr>
   </thead>
   <tbody>
+    @foreach($usuarios as $u)
     <tr>
-        <td>João Antonio</td>
-        <td>Não informado</td>
-        <td>123456789</td>
-        <td>019348543</td>
-        <td>joao@email.com</td>
+        <td>{{ $u->primeiro_nome . ' ' . $u->ultimo_nome }}</td>
+        <td>{{ $u->nome_social == "" || empty($u->nome_social) ? 'Não possui' : $u->nome_social }}</td>
+        <td>{{ $u->cpf }}</td>
+        <td>{{ $u->rg }}</td>
+        <td>{{ $u->email }}</td>
         <td>
-            <a href="/ver/1" class="btn btn-primary">VER</a>
-            <a href="/editar/1" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/1" class="btn btn-danger">EXCLUIR</a>
+            <a href="{{ action('AsseguradoController@ver', $u->id) }}" class="btn btn-primary">VER</a>
+            <a href="{{ action('AsseguradoController@editar', $u->id) }}" class="btn btn-success">EDITAR</a>
+            <a href="{{ action('AsseguradoController@deletar', $u->id) }}" onclick="return confirm('Deseja mesmo excluir o(a) assegurado(a) {{ $u->primeiro_nome . ' ' . $u->ultimo_nome }}?');" class="btn btn-danger">EXCLUIR</a>
         </td>
     </tr>
-    <tr>
-        <td>Jose Paulo</td>
-        <td>Não informado</td>
-        <td>437589724985</td>
-        <td>48758927584</td>
-        <td>jose@email.com</td>
-        <td>
-            <a href="/ver/2" class="btn btn-primary">VER</a>
-            <a href="/editar/2" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/2" class="btn btn-danger">EXCLUIR</a>
-        </td>
-    </tr>
+    @endforeach
   </tbody>
 </table>
 @stop

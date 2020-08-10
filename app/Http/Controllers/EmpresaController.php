@@ -12,6 +12,21 @@ class EmpresaController extends Controller {
         $this->middleware('auth');
     }
 
+    public function deletar($id) {
+        $id = Request::route('id');
+        return EmpresaController::lista();
+    }
+
+    public function editar($id) {
+        $id = Request::route('id');
+        return view('admin.gerenciamento.empresas.empresa_editar');
+    }
+
+    public function update(/*EmpresaRequest $request,*/ $id) {
+        $id = Request::route('id');
+        return EmpresaController::lista();
+    }
+
     public function novo() {
         return view('admin.gerenciamento.empresas.empresa_cadastro');
     }
@@ -20,14 +35,22 @@ class EmpresaController extends Controller {
         return view('admin.gerenciamento.empresas.empresas_lista');
     }
 
-public function adiciona(/*EmpresaRequest $request*/) {
+    public function ver($id) {
+        $id = Request::route('id');
+        //$resposta = DB::select('SELECT * FROM assegurados WHERE id = ?', [$id]);
+        //if (empty($resposta)) return AsseguradoController::nao_existe();
+        return view('admin.gerenciamento.empresas.empresa_ver');
+    }
 
-    /*
-        banco de dados
-    */
+    public function adiciona(/*EmpresaRequest $request*/) {
 
-    $sucesso = 'Empresa ' . Request::input('nome_fantasia') . ' registrada com sucesso.';
-    return redirect()->action('EmpresaController@novo')->with('sucesso', $sucesso);
-}
+        /*
+            DB:insert('',
+        array());
+        */
+
+        $sucesso = 'Empresa ' . Request::input('nome_fantasia') . ' registrada com sucesso.';
+        return redirect()->action('EmpresaController@novo')->with('sucesso', $sucesso);
+    }
 
 }
