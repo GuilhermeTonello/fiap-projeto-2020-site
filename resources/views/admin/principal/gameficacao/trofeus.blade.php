@@ -40,8 +40,7 @@
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="descricao">Descrição</label>
                 <div class="col-sm-10">
-                  <textarea rows="4" value="{{ old('descricao') }}" placeholder="Descrição do troféu" type="text" class="form-control" id="descricao" name="descricao">
-                  </textarea>
+                  <textarea rows="4" value="{{ old('descricao') }}" placeholder="Descrição do troféu" type="text" class="form-control" id="descricao" name="descricao"></textarea>
                 </div>
               </div>
               <br />

@@ -32,19 +32,20 @@ Config::set('vars.view', $view);
             {{ Session::get('sucesso') }}
         </div>
     @endif
-            <form action="{{ action('TerceiroController@adiciona') }}" enctype="multipart/form-data" method="post">
+            <!-- trocar o 1 ai no action do form por $u->id -->
+            <form action="{{ action('TerceiroController@editar', $u->id) }}" enctype="multipart/form-data" method="post">
                 @csrf
                 <h4 class="sub-title">Informações pessoais</h4>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="primeiro-nome">Primeiro nome</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('primeiro_nome') }}" placeholder="Primeiro nome" type="text" class="form-control" id="primeiro-nome" name="primeiro_nome">
+                  <input value="{{ $u->primeiro_nome }}" placeholder="Primeiro nome" type="text" class="form-control" id="primeiro-nome" name="primeiro_nome">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="sobrenome">Sobrenome</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('sobrenome') }}" placeholder="Sobrenome" type="text" class="form-control" id="sobrenome" name="sobrenome">
+                  <input value="{{ $u->ultimo_nome }}" placeholder="Sobrenome" type="text" class="form-control" id="sobrenome" name="sobrenome">
                 </div>
               </div>
               <div class="form-group row">
@@ -62,7 +63,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="nome-social">Nome social</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('nome_social') }}" aria-describedby="nome-social-help" placeholder="Nome social" type="text" class="form-control" id="nome-social" name="nome_social" disabled>
+                  <input value="{{ $u->nome_social }}" aria-describedby="nome-social-help" placeholder="Nome social" type="text" class="form-control" id="nome-social" name="nome_social" disabled>
                   <small id="nome-social-help" class="form-text text-muted">
                     Esse campo é opcional.
                   </small>
@@ -71,7 +72,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="genero">Especifique o gênero</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('genero') }}" aria-describedby="genero-help" placeholder="Especifique o gênero" type="text" class="form-control" id="genero" name="genero" disabled>
+                  <input value="{{ $u->genero }}" aria-describedby="genero-help" placeholder="Especifique o gênero" type="text" class="form-control" id="genero" name="genero" disabled>
                   <small id="genero-help" class="form-text text-muted">
                     Esse campo é opcional.
                   </small>
@@ -80,7 +81,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="email">E-Mail</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('email') }}" aria-describedby="email-help" placeholder="E-Mail" type="text" class="form-control" id="email" name="email">
+                  <input value="{{ $u->email }}" aria-describedby="email-help" placeholder="E-Mail" type="text" class="form-control" id="email" name="email">
                   <small id="email-help" class="form-text text-muted">
                     Insira no seguinte formato: exemplo@email.com. Exemplo: maria@gmail.com
                   </small>
@@ -89,7 +90,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="senha">Senha</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('senha') }}" type="password" class="form-control" placeholder="Senha" id="senha" name="senha">
+                  <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha">
                 </div>
               </div>
               <div class="form-group row">
@@ -104,13 +105,13 @@ Config::set('vars.view', $view);
                       <span class="input-group-prepend">
                           <label class="input-group-text"><i class="fa fa-calendar-check"></i></label>
                       </span>
-                      <input value="{{ old('data_nascimento') }}" type="date" class="form-control" name="data_nascimento" id="nascimento" />
+                      <input value="{{ $u->data_nascimento }}" type="date" class="form-control" name="data_nascimento" id="nascimento" />
                   </div>
               </div>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="rg">RG</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('rg') }}" aria-describedby="rg-help" placeholder="RG" type="text" class="form-control" id="rg" name="rg">
+                  <input value="{{ $u->rg }}" aria-describedby="rg-help" placeholder="RG" type="text" class="form-control" id="rg" name="rg">
                   <small id="rg-help" class="form-text text-muted">
                     Insira no seguinte formato: XXXXXXXX. Exemplo: 12345678
                   </small>
@@ -119,7 +120,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="cpf">CPF</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('cpf') }}" aria-describedby="cpf-help" placeholder="CPF" type="text" class="form-control" id="cpf" name="cpf">
+                  <input value="{{ $u->cpf }}" aria-describedby="cpf-help" placeholder="CPF" type="text" class="form-control" id="cpf" name="cpf">
                   <small id="cpf-help" class="form-text text-muted">
                     Insira no seguinte formato: XXXXXXXXXXX. Exemplo: 12345678912
                   </small>
@@ -128,7 +129,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="telefone">Telefone</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('telefone') }}" aria-describedby="telefone-help" placeholder="Telefone" type="text" class="form-control" id="telefone" name="telefone">
+                  <input value="{{ $u->telefone }}" aria-describedby="telefone-help" placeholder="Telefone" type="text" class="form-control" id="telefone" name="telefone">
                   <small id="telefone-help" class="form-text text-muted">
                     Insira no seguinte formato: XX XXXXXXXXX. Exemplo: 11 123456789
                   </small>
@@ -139,7 +140,7 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="cep">CEP</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('cep') }}" aria-describedby="cep-help" placeholder="CEP" type="text" class="form-control" id="cep" name="cep">
+                  <input value="{{ json_decode($u->endereco)->cep }}" aria-describedby="cep-help" placeholder="CEP" type="text" class="form-control" id="cep" name="cep">
                   <small id="cep-help" class="form-text text-muted">
                     Insira no seguinte formato: XXXXXXXX. Exemplo: 01001000
                   </small>
@@ -148,19 +149,19 @@ Config::set('vars.view', $view);
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="logradouro">Logradouro</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('logradouro') }}" placeholder="Logradouro" type="text" class="form-control" id="logradouro" name="logradouro">
+                  <input value="{{ json_decode($u->endereco)->logradouro }}" placeholder="Logradouro" type="text" class="form-control" id="logradouro" name="logradouro">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="bairro">Bairro</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('bairro') }}" placeholder="Bairro" type="text" class="form-control" id="bairro" name="bairro">
+                  <input value="{{ json_decode($u->endereco)->bairro }}" placeholder="Bairro" type="text" class="form-control" id="bairro" name="bairro">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="complemento">Complemento</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('complemento') }}" placeholder="Complemento" type="text" class="form-control" id="complemento" name="complemento">
+                  <input value="{{ json_decode($u->endereco)->complemento }}" placeholder="Complemento" type="text" class="form-control" id="complemento" name="complemento">
                 </div>
               </div>
               <div class="form-group row">
@@ -198,11 +199,11 @@ Config::set('vars.view', $view);
                       </select>
                   </div>
               </div>
-              <script>document.getElementById("uf").value = "{{ old('uf') }}";</script>
+              <script>document.getElementById("uf").value = "{{ json_decode($u->endereco)->uf }}";</script>
               <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="cidade">Cidade</label>
                 <div class="col-sm-10">
-                  <input value="{{ old('cidade') }}" placeholder="Complemento" type="text" class="form-control" id="cidade" name="cidade">
+                  <input value="{{ json_decode($u->endereco)->cidade }}" placeholder="Complemento" type="text" class="form-control" id="cidade" name="cidade">
                 </div>
               </div>
               <br />
@@ -297,7 +298,7 @@ Config::set('vars.view', $view);
             let option = document.getElementById('sexo').options[document.getElementById('sexo').selectedIndex].value;
             let nome_social = document.getElementById('nome-social');
             let genero = document.getElementById('genero');
-            if (option == "Outro" || option == "Prefiro não dizer") {
+            if (option == "Outro" || option == "NãoInformado") {
                 nome_social.disabled = false;
                 genero.disabled = false;
             } else {
@@ -307,6 +308,6 @@ Config::set('vars.view', $view);
                 genero.disabled = true;
             }
         }
-        document.getElementById("sexo").value = "{{ old('sexo') }}";habilitarCamposLGBT();
+        document.getElementById("sexo").value = "{{ $u->sexo }}";habilitarCamposLGBT();
     </script>
 @stop

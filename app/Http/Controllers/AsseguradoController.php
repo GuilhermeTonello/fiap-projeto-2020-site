@@ -43,9 +43,14 @@ class AsseguradoController extends Controller {
         $cpf = Request::input('cpf');
         $telefone = Request::input('telefone');
         $endereco = json_encode(array('cep' => Request::input('cep'),'logradouro' => Request::input('logradouro'),'uf' => Request::input('uf'),'cidade' => Request::input('cidade'), 'bairro' => Request::input('bairro'), 'complemento' => Request::input('complemento') ), true);
-
-        DB::update('UPDATE assegurados SET primeiro_nome = ?, ultimo_nome = ?, sexo = ?, nome_social = ?, genero = ?, email = ?, senha = ?, data_nascimento = ?, rg = ?, cpf = ?, telefone = ?, endereco = ? WHERE id = ?',
+        if(!Request::hasFile('foto_rg')) {
+          DB::update('UPDATE assegurados SET primeiro_nome = ?, ultimo_nome = ?, sexo = ?, nome_social = ?, genero = ?, email = ?, senha = ?, data_nascimento = ?, rg = ?, cpf = ?, telefone = ?, endereco = ? WHERE id = ?',
     array($primeiro_nome, $sobrenome, $sexo, $nome_social, $genero, $email, $senha, $data_nascimento, $rg, $cpf, $telefone, $endereco, $id));
+        }else{
+          $rg_file = Request::file('foto_rg')->store('foto_rg');
+          DB::update('UPDATE assegurados SET primeiro_nome = ?, ultimo_nome = ?, sexo = ?, nome_social = ?, genero = ?, email = ?, senha = ?, data_nascimento = ?, rg = ?, cpf = ?, telefone = ?, endereco = ?, foto_rg = ? WHERE id = ?',
+    array($primeiro_nome, $sobrenome, $sexo, $nome_social, $genero, $email, $senha, $data_nascimento, $rg, $cpf, $telefone, $endereco, $rg_file, $id));
+        }
         return AsseguradoController::lista()->with('u', $resposta[0])->with('sucesso', 'Assegurado(a) ' . $editado . ' editado(a) com sucesso!');
     }
 
@@ -61,8 +66,11 @@ class AsseguradoController extends Controller {
     public function ver($id) {
         $id = Request::route('id');
         $resposta = DB::select('SELECT * FROM assegurados WHERE id = ?', [$id]);
+        if(Storage::exists($resposta[0]->foto_rg)){
+          $resposta[1] = base64_encode(Storage::get($resposta[0]->foto_rg));
+        }else{$resposta[1] = null;}
         if (empty($resposta)) return AsseguradoController::lista()->with('erro', 'Esse usuário não existe!');
-        return view('admin.gerenciamento.assegurados.assegurado_ver')->with('u', $resposta[0]);
+        return view('admin.gerenciamento.assegurados.assegurado_ver')->with('u', $resposta[0])->with('i', $resposta[1]);
     }
 
     public function novo() {

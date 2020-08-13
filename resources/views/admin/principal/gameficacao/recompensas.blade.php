@@ -6,8 +6,8 @@
 @stop
 
 @section('titulo')
-<h5>Gameficação - Troféus</h5>
-<span>Cadastro e lista de troféus.</span>
+<h5>Gameficação - Recompensas</h5>
+<span>Cadastro e lista de recompensas.</span>
 @stop
 
 @section('conteudo')

@@ -15,7 +15,9 @@
     <div class="col-sm-4">
         <a href="{{ action('HomeController@index') }}">
             <div class="card" style="width: 18rem;">
+                <!--
               <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
+                -->
               <div class="card-body">
                 <h5 class="card-title">Home</h5>
                 <p class="card-text">Página principal.</p>
@@ -26,7 +28,6 @@
     <div class="col-sm-4">
         <a href="{{ action('TrofeusController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Gameficação - Troféus</h5>
                 <p class="card-text">Página sobre os troféus.</p>
@@ -37,7 +38,6 @@
     <div class="col-sm-4">
         <a href="{{ action('RecompensasController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Gameficação - Recompensas</h5>
                 <p class="card-text">Página sobre as recompensas.</p>
@@ -48,7 +48,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ReviewsController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Analytics - Reviews</h5>
                 <p class="card-text">Página sobre as reviews.</p>
@@ -59,7 +58,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ServicosMaisUtilizadosController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Analytics - Serviçoes mais utilizados</h5>
                 <p class="card-text">Página sobre os serviços mais utilizados.</p>
@@ -73,7 +71,6 @@
     <div class="col-sm-4">
         <a href="{{ action('AsseguradoController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Assegurados - Novo assegurado</h5>
                 <p class="card-text">Registrar novo assegurado.</p>
@@ -84,7 +81,6 @@
     <div class="col-sm-4">
         <a href="{{ action('AsseguradoController@lista') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Assegurados - Lista</h5>
                 <p class="card-text">Lista de assegurados registrados.</p>
@@ -95,7 +91,6 @@
     <div class="col-sm-4">
         <a href="{{ action('TerceiroController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Terceiros - Novo terceiro</h5>
                 <p class="card-text">Registrar novo terceiro.</p>
@@ -106,7 +101,6 @@
     <div class="col-sm-4">
         <a href="{{ action('TerceiroController@lista') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Terceiros - Lista</h5>
                 <p class="card-text">Lista de terceiros registrados.</p>
@@ -117,7 +111,6 @@
     <div class="col-sm-4">
         <a href="{{ action('EmpresaController@novo') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Empresas - Nova empresa</h5>
                 <p class="card-text">Registrar nova empresa.</p>
@@ -128,7 +121,6 @@
     <div class="col-sm-4">
         <a href="{{ action('EmpresaController@lista') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Empresas - Lista</h5>
                 <p class="card-text">Lista de empresas registradas.</p>
@@ -142,7 +134,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ApoliceController@index_automovel') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Apólices - Automóvel</h5>
                 <p class="card-text">Página sobre seguro de automóveis.</p>
@@ -153,7 +144,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ApoliceController@index_residencial') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Apólices - Residência</h5>
                 <p class="card-text">Página sobre seguro residencial.</p>
@@ -164,7 +154,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ApoliceController@index_empresarial') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Apólices - Empresa</h5>
                 <p class="card-text">Página sobre seguro empresarial.</p>
@@ -175,7 +164,6 @@
     <div class="col-sm-4">
         <a href="{{ action('ApoliceController@index_vida') }}">
             <div class="card" style="width: 18rem;">
-              <img src="https://emprad.org.br/wp-content/themes/consultix/images/no-image-found-360x260.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Apólices - Vida</h5>
                 <p class="card-text">Página sobre seguro de vida.</p>

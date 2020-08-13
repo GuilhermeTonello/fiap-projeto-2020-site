@@ -13,6 +13,8 @@ class EmpresaRequest extends FormRequest {
     public function messages() {
         return [
             'required' => 'O campo :attribute está vazio',
+            'same' => '',
+            'senha.same' => 'As senhas devem ser iguais',
         ];
     }
 
@@ -23,6 +25,9 @@ class EmpresaRequest extends FormRequest {
             'email' => 'required',
             'telefone' => 'required',
             'autorizante' => 'required',
+            'cnpj' => 'required',
+            'senha' => 'required|same:confirmar_senha',
+            'confirmar_senha' => 'required|same:senha',
             'cep' => 'required',
             'logradouro' => 'required',
             'complemento' => 'required',

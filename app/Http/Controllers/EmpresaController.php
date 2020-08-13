@@ -12,6 +12,10 @@ class EmpresaController extends Controller {
         $this->middleware('auth');
     }
 
+    public function nao_existe() {
+        return EmpresaController::lista()->with('erro', 'Esse usuário não existe!');
+    }
+
     public function deletar($id) {
         $id = Request::route('id');
         return EmpresaController::lista();

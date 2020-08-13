@@ -40,17 +40,22 @@ Route::prefix("cadastros")->group(function() {
 
 Route::prefix("ver")->group(function() {
     Route::get('/assegurados/{id}', 'AsseguradoController@ver')->where('id', '[0-9]+');
+    Route::get('/terceiros/{id}', 'TerceiroController@ver')->where('id', '[0-9]+');
     Route::get('/empresas/{id}', 'EmpresaController@ver')->where('id', '[0-9]+');
 });
 
 Route::prefix("deletar")->group(function() {
     Route::get('/assegurados/{id}', 'AsseguradoController@deletar')->where('id', '[0-9]+');
+    Route::get('/terceiros/{id}', 'TerceiroController@deletar')->where('id', '[0-9]+');
     Route::get('/empresas/{id}', 'EmpresaController@deletar')->where('id', '[0-9]+');
 });
 
 Route::prefix("editar")->group(function() {
     Route::get('/assegurados/{id}', 'AsseguradoController@editar')->where('id', '[0-9]+');
     Route::post('/assegurados/{id}', 'AsseguradoController@update')->where('id', '[0-9]+');
+
+    Route::get('/terceiros/{id}', 'TerceiroController@editar')->where('id', '[0-9]+');
+    Route::post('/terceiros/{id}', 'TerceiroController@update')->where('id', '[0-9]+');
 
     Route::get('/empresas/{id}', 'EmpresaController@editar')->where('id', '[0-9]+');
     Route::post('/empresas/{id}', 'EmpresaController@update')->where('id', '[0-9]+');

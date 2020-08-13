@@ -35,7 +35,8 @@ Config::set('vars.view', $view);
           </div>
       @endif
 
-        <form action="{{ action('EmpresaController@adiciona') }}" method="post">
+      <!-- trocar o 1 ai no action do form por $u->id -->
+        <form action="{{ action('EmpresaController@editar', 1) }}" method="post">
             @csrf
             <h4 class="sub-title">Informações da empresa</h4>
           <div class="form-group row">
@@ -57,6 +58,18 @@ Config::set('vars.view', $view);
               <small value="{{ old('cnpj') }}" id="cnpj-help" class="form-text text-muted">
                 Insira no seguinte formato: XXXXXXXXX. Exemplo: 96501677000182.
               </small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="senha">Senha</label>
+            <div class="col-sm-10">
+              <input value="{{ old('senha') }}" type="password" class="form-control" placeholder="Senha" id="senha" name="senha">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="confirmar-senha">Confirmar senha</label>
+            <div class="col-sm-10">
+              <input name="confirmar_senha" type="password" class="form-control" placeholder="Confirmar senha" id="confirmar-senha">
             </div>
           </div>
           <div class="form-group row">
@@ -85,7 +98,7 @@ Config::set('vars.view', $view);
                       <?php
                         use Illuminate\Support\Facades\DB;
                       ?>
-                      @foreach(DB::select('SELECT * FROM assegurados') as $a)
+                      @foreach(DB::select('SELECT id, email FROM assegurados') as $a)
                           <option value="{{ $a->id }}">{{ $a->email }}</option>
                       @endforeach
                   </select>
@@ -174,4 +187,69 @@ Config::set('vars.view', $view);
 @stop
 @section('scripts_foot')
     @include('admin.includes.scripts_principais')
+    <script src="{{ secure_asset('/js/jquery-3.5.1.slim.js') }}"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#logradouro").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+            }
+
+            //Quando o campo cep perde o foco.
+            $("#cep").blur(function() {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $("#logradouro").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#uf").val("...");
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#logradouro").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            });
+        });
+
+    </script>
 @stop

@@ -36,30 +36,20 @@ Config::set('vars.view', $view);
     </tr>
   </thead>
   <tbody>
-    <tr>
-        <td>João Antonio</td>
-        <td>Não informado</td>
-        <td>123456789</td>
-        <td>019348543</td>
-        <td>joao-terceiro@email.com</td>
-        <td>
-            <a href="/ver/1" class="btn btn-primary">VER</a>
-            <a href="/editar/1" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/1" class="btn btn-danger">EXCLUIR</a>
-        </td>
-    </tr>
-    <tr>
-        <td>Jose Paulo</td>
-        <td>Não informado</td>
-        <td>437589724985</td>
-        <td>48758927584</td>
-        <td>jose-terceiro@email.com</td>
-        <td>
-            <a href="/ver/2" class="btn btn-primary">VER</a>
-            <a href="/editar/2" class="btn btn-success">EDITAR</a>
-            <a href="/deletar/2" class="btn btn-danger">EXCLUIR</a>
-        </td>
-    </tr>
+      @foreach($terceiros as $u)
+      <tr>
+          <td>{{ $u->primeiro_nome . ' ' . $u->ultimo_nome }}</td>
+          <td>{{ $u->nome_social == "" || empty($u->nome_social) ? 'Não possui' : $u->nome_social }}</td>
+          <td>{{ $u->cpf }}</td>
+          <td>{{ $u->rg }}</td>
+          <td>{{ $u->email }}</td>
+          <td>
+              <a href="{{ action('TerceiroController@ver', $u->id) }}" class="btn btn-primary">VER</a>
+              <a href="{{ action('TerceiroController@editar', $u->id) }}" class="btn btn-success">EDITAR</a>
+              <a href="{{ action('TerceiroController@deletar', $u->id) }}" onclick="return confirm('Deseja mesmo excluir o(a) assegurado(a) {{ $u->primeiro_nome . ' ' . $u->ultimo_nome }}?');" class="btn btn-danger">EXCLUIR</a>
+          </td>
+      </tr>
+      @endforeach
   </tbody>
 </table>
 @stop

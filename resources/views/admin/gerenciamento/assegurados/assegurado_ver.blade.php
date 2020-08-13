@@ -25,6 +25,9 @@
           <li>Cidade: {{ json_decode($u->endereco)->cidade }}</li>
           <li>Bairro: {{ json_decode($u->endereco)->bairro }}</li>
           <li>Complemento: {{ json_decode($u->endereco)->complemento }}</li>
+          @if($i != null)
+            <li><img src="data:image/png;base64,{{ $i }}" alt="teste" /></li>
+          @endif
       </ul>
     </div>
 </div>
