@@ -48,17 +48,19 @@ Config::set('vars.view', $view);
     </tr>
   </thead>
   <tbody>
+    @foreach($empresas as $e)
     <tr>
-        <td>Empresa 1</td>
-        <td>Existir para testes</td>
-        <td>123456789</td>
-        <td>e1@email.com</td>
+        <td>{{ $e->nome_fantasia }}</td>
+        <td>{{ $e->razao_social }}</td>
+        <td>{{ $e->cnpj }}</td>
+        <td>{{ $e->email }}</td>
         <td>
-            <a href="{{ action('EmpresaController@ver', 1) }}" class="btn btn-primary">VER</a>
-            <a href="{{ action('EmpresaController@editar', 1) }}" class="btn btn-success">EDITAR</a>
-            <a onclick="return confirm('Deseja mesmo excluir a empresa TESTE?');" href="{{ action('EmpresaController@deletar', 1) }}" class="btn btn-danger">EXCLUIR</a>
+            <a href="{{ action('EmpresaController@ver', $e->id) }}" class="btn btn-primary">VER</a>
+            <a href="{{ action('EmpresaController@editar', $e->id) }}" class="btn btn-success">EDITAR</a>
+            <a onclick="return confirm('Deseja mesmo excluir a empresa {{ $e->nome_fantasia }}');" href="{{ action('EmpresaController@deletar', $e->id) }}" class="btn btn-danger">EXCLUIR</a>
         </td>
     </tr>
+    @endforeach
   </tbody>
 </table>
 @stop

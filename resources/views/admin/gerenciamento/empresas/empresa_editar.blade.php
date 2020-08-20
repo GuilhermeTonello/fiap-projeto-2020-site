@@ -11,7 +11,7 @@ Config::set('vars.view', $view);
 @stop
 
 @section('titulo')
-<h5>Editando empresa TESTE</h5>
+<h5>Editando empresa {{ $e->nome_fantasia }}</h5>
 <span>Página para edição de uma empresa</span>
 @stop
 
@@ -35,27 +35,26 @@ Config::set('vars.view', $view);
           </div>
       @endif
 
-      <!-- trocar o 1 ai no action do form por $u->id -->
-        <form action="{{ action('EmpresaController@editar', 1) }}" method="post">
+        <form action="{{ action('EmpresaController@update', $e->id) }}" method="post">
             @csrf
             <h4 class="sub-title">Informações da empresa</h4>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="nome-fantasia">Nome fantasia</label>
             <div class="col-sm-10">
-              <input value="{{ old('nome_fantasia') }}" placeholder="Nome fantasia" type="text" class="form-control" id="nome-fantasia" name="nome_fantasia">
+              <input value="{{ $e->nome_fantasia }}" placeholder="Nome fantasia" type="text" class="form-control" id="nome-fantasia" name="nome_fantasia">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="razao-social">Razão social</label>
             <div class="col-sm-10">
-              <input value="{{ old('razao_social') }}" placeholder="Nome fantasia" type="text" class="form-control" id="razao-social" name="razao_social">
+              <input value="{{ $e->razao_social }}" placeholder="Razão fantasia" type="text" class="form-control" id="razao-social" name="razao_social">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="cnpj">CNPJ</label>
             <div class="col-sm-10">
               <input aria-describedby="cnpj-help" placeholder="CNPJ" type="text" class="form-control" id="cnpj" name="cnpj">
-              <small value="{{ old('cnpj') }}" id="cnpj-help" class="form-text text-muted">
+              <small value="{{ $e->cnpj }}" id="cnpj-help" class="form-text text-muted">
                 Insira no seguinte formato: XXXXXXXXX. Exemplo: 96501677000182.
               </small>
             </div>
@@ -63,7 +62,7 @@ Config::set('vars.view', $view);
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="senha">Senha</label>
             <div class="col-sm-10">
-              <input value="{{ old('senha') }}" type="password" class="form-control" placeholder="Senha" id="senha" name="senha">
+              <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha">
             </div>
           </div>
           <div class="form-group row">
@@ -75,8 +74,8 @@ Config::set('vars.view', $view);
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="email">E-Mail</label>
             <div class="col-sm-10">
-              <input aria-describedby="email-help" placeholder="E-Mail" type="text" class="form-control" id="email" name="email">
-              <small value="{{ old('email') }}" id="email-help" class="form-text text-muted">
+              <input value="{{ $e->email }}" aria-describedby="email-help" placeholder="E-Mail" type="text" class="form-control" id="email" name="email">
+              <small id="email-help" class="form-text text-muted">
                 Insira no seguinte formato: exemplo@email.com. Exemplo: maria@gmail.com
               </small>
             </div>
@@ -84,7 +83,7 @@ Config::set('vars.view', $view);
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="telefone">Telefone</label>
             <div class="col-sm-10">
-              <input value="{{ old('telefone') }}" aria-describedby="telefone-help" placeholder="Telefone" type="text" class="form-control" id="telefone" name="telefone">
+              <input value="{{ $e->telefone }}" aria-describedby="telefone-help" placeholder="Telefone" type="text" class="form-control" id="telefone" name="telefone">
               <small id="telefone-help" class="form-text text-muted">
                 Insira no seguinte formato: XX XXXXXXXXX. Exemplo: 11 123456789
               </small>
@@ -102,6 +101,7 @@ Config::set('vars.view', $view);
                           <option value="{{ $a->id }}">{{ $a->email }}</option>
                       @endforeach
                   </select>
+                  <script>document.getElementById("autorizante").value = "{{ $e->autorizante }}";</script>
               </div>
           </div>
           <br />
@@ -109,7 +109,7 @@ Config::set('vars.view', $view);
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="cep">CEP</label>
             <div class="col-sm-10">
-              <input value="{{ old('cep') }}" aria-describedby="cep-help" placeholder="CEP" type="text" class="form-control" id="cep" name="cep">
+              <input value="{{ json_decode($e->endereco)->cep }}" aria-describedby="cep-help" placeholder="CEP" type="text" class="form-control" id="cep" name="cep">
               <small id="cep-help" class="form-text text-muted">
                 Insira no seguinte formato: XXXXXXXX. Exemplo: 01001000
               </small>
@@ -118,19 +118,19 @@ Config::set('vars.view', $view);
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="logradouro">Logradouro</label>
             <div class="col-sm-10">
-              <input value="{{ old('logradouro') }}" placeholder="Logradouro" type="text" class="form-control" id="logradouro" name="logradouro">
+              <input value="{{ json_decode($e->endereco)->logradouro }}" placeholder="Logradouro" type="text" class="form-control" id="logradouro" name="logradouro">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="bairro">Bairro</label>
             <div class="col-sm-10">
-              <input value="{{ old('bairro') }}" placeholder="Complemento" type="text" class="form-control" id="bairro" name="bairro">
+              <input value="{{ json_decode($e->endereco)->bairro }}" placeholder="Complemento" type="text" class="form-control" id="bairro" name="bairro">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="complemento">Complemento</label>
             <div class="col-sm-10">
-              <input value="{{ old('complemento') }}" placeholder="Complemento" type="text" class="form-control" id="complemento" name="complemento">
+              <input value="{{ json_decode($e->endereco)->complemento }}" placeholder="Complemento" type="text" class="form-control" id="complemento" name="complemento">
             </div>
           </div>
           <div class="form-group row">
@@ -166,16 +166,17 @@ Config::set('vars.view', $view);
                       <option value="SE">Sergipe</option>
                       <option value="TO">Tocantins</option>
                   </select>
+                  <script>document.getElementById("uf").value = "{{ json_decode($e->endereco)->uf }}";</script>
               </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" for="cidade">Cidade</label>
             <div class="col-sm-10">
-              <input value="{{ old('cidade') }}" placeholder="Complemento" type="text" class="form-control" id="cidade" name="cidade">
+              <input value="{{ json_decode($e->endereco)->cidade }}" placeholder="Complemento" type="text" class="form-control" id="cidade" name="cidade">
             </div>
           </div>
           <br />
-          <h4 class="sub-title">Finalizar cadastro</h4>
+          <h4 class="sub-title">Finalizar edição</h4>
           <div class="form-group row">
             <div class="col-sm-4">
               <button type="submit" class="btn btn-primary">Finalizar edição</button>

@@ -32,7 +32,6 @@ Config::set('vars.view', $view);
             {{ Session::get('sucesso') }}
         </div>
     @endif
-            <!-- trocar o 1 ai no action do form por $u->id -->
             <form action="{{ action('TerceiroController@editar', $u->id) }}" enctype="multipart/form-data" method="post">
                 @csrf
                 <h4 class="sub-title">Informações pessoais</h4>
@@ -215,10 +214,10 @@ Config::set('vars.view', $view);
                 </div>
               </div>
               <br />
-              <h4 class="sub-title">Finalizar cadastro</h4>
+              <h4 class="sub-title">Finalizar edição</h4>
               <div class="form-group row">
                 <div class="col-sm-4">
-                  <button type="submit" class="btn btn-primary">Finalizar cadastro</button>
+                  <button type="submit" class="btn btn-primary">Finalizar edição</button>
                 </div>
               </div>
             </form>

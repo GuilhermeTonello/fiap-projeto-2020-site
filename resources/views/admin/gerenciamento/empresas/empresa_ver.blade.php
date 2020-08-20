@@ -13,18 +13,18 @@
 <div class="card">
   <div class="card-block">
       <ul>
-          <li>Nome fantasia: teste</li>
-          <li>Razão social: teste</li>
-          <li>E-Mail: teste</li>
-          <li>Autorizante: teste</li>
-          <li>CNPJ: teste</li>
-          <li>Telefone: teste</li>
-          <li>CEP: teste</li>
-          <li>Logradouro: teste</li>
-          <li>UF: teste</li>
-          <li>Cidade: teste</li>
-          <li>Bairro: teste</li>
-          <li>Complemento: teste</li>
+          <li>Nome fantasia: {{ $e->nome_fantasia }}</li>
+          <li>Razão social: {{ $e->razao_social }}</li>
+          <li>E-Mail: {{ $e->email }}</li>
+          <li>Autorizante: {{ $e->autorizante }}</li>
+          <li>CNPJ: {{ $e->cnpj }}</li>
+          <li>Telefone: {{ $e->telefone }}</li>
+          <li>CEP: {{ json_decode($e->endereco)->cep }}</li>
+          <li>Logradouro: {{ json_decode($e->endereco)->logradouro }}</li>
+          <li>UF: {{ json_decode($e->endereco)->uf }}</li>
+          <li>Cidade: {{ json_decode($e->endereco)->cidade }}</li>
+          <li>Bairro: {{ json_decode($e->endereco)->bairro }}</li>
+          <li>Complemento: {{ json_decode($e->endereco)->complemento }}</li>
       </ul>
     </div>
 </div>

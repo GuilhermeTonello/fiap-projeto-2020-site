@@ -211,7 +211,7 @@ Config::set('vars.view', $view);
             </div>
           </div>
           <br />
-          <h4 class="sub-title">Finalizar cadastro</h4>
+          <h4 class="sub-title">Finalizar edição</h4>
           <div class="form-group row">
             <div class="col-sm-4">
               <button type="submit" class="btn btn-primary">Finalizar edição</button>

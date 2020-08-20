@@ -18,8 +18,10 @@ class CreateEmpresasTable extends Migration
             $table->char('razao_social', 255)->unique();
             $table->char('nome_fantasia', 255)->unique();
             $table->char('cnpj', 30)->unique();
+            $table->char('senha', 30)->unique();
             $table->char('email', 255)->unique();
             $table->char('telefone', 50);
+            $table->char('autorizante', 50);
             $table->json('endereco');
             $table->timestamps();
         });
