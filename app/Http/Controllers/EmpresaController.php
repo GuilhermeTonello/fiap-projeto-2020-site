@@ -50,7 +50,7 @@ class EmpresaController extends Controller {
         $autorizante = Request::input('autorizante');
         $endereco = json_encode(array('cep' => Request::input('cep'),'logradouro' => Request::input('logradouro'),'uf' => Request::input('uf'),'cidade' => Request::input('cidade'), 'bairro' => Request::input('bairro'), 'complemento' => Request::input('complemento') ), true);
         DB::update('UPDATE empresas SET razao_social = ?, nome_fantasia = ?, cnpj = ?, senha = ?, email = ?, telefone = ?, autorizante = ?, endereco = ? WHERE id = ?',
-        array($nome_fantasia, $razao_social, $cnpj, $senha, $email, $telefone, $autorizante, $endereco, $id));
+        array($razao_social, $nome_fantasia, $cnpj, $senha, $email, $telefone, $autorizante, $endereco, $id));
 
         return EmpresaController::lista()->with('u', $resposta[0])->with('sucesso', 'Empresa ' . $editado . ' editada com sucesso!');
     }
@@ -85,7 +85,7 @@ class EmpresaController extends Controller {
       $endereco = json_encode(array('cep' => Request::input('cep'),'logradouro' => Request::input('logradouro'),'uf' => Request::input('uf'),'cidade' => Request::input('cidade'), 'bairro' => Request::input('bairro'), 'complemento' => Request::input('complemento') ), true);
 
       DB::insert('INSERT INTO empresas(razao_social, nome_fantasia, cnpj, senha, email, telefone, autorizante, endereco) VALUES(?, ?, ?, ?, ?, ?, ?, ?)',
-      array($nome_fantasia, $razao_social, $cnpj, $senha, $email, $telefone, $autorizante, $endereco));
+      array($razao_social, $nome_fantasia, $cnpj, $senha, $email, $telefone, $autorizante, $endereco));
 
       $sucesso = 'Empresa ' . Request::input('nome_fantasia') . ' registrada com sucesso.';
       return redirect()->action('EmpresaController@novo')->with('sucesso', $sucesso);

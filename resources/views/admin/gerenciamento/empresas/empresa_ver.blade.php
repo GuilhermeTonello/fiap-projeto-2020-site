@@ -5,7 +5,7 @@
 @stop
 
 @section('titulo')
-    <h5>Visualizando assegurado</h5>
+    <h5>Visualizando empresa</h5>
     <span>Página para visualização de assegurado</span>
 @stop
 
